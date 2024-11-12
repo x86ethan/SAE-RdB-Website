@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Transports</title>
+    
+    <link rel="stylesheet" href="css/index.css">
+    <script src="scripts/burger-menu.js"></script>
+    <script src="scripts/tabbar.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="burger-menu" class="burger-icon" onclick="toggleNavMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div> 
+    <nav id="navtop">
+        <menu>
+            <div id="menu">
+                <div style="--i: 1"><a href="Href1" class="nav">Login</a></div>
+                <div style="--i: 2"><a href="Href2" class="nav">Menu 2</a></div>
+                <div style="--i: 3"><a href="Href3" class="nav">Menu 3</a></div>
+            </div>
+        </menu>
+    </nav>
+
+    <div id="mainmenu">
+        <h1 id="mainlogo">
+            <img src="img/apple-logo.png" alt="Apple" id="applelogo">
+            Transports
+        </h1>
+
+        <textarea onkeypress="return event.keyCode !== 13" name="" rows="1" id="searchbar" placeholder="🔍 Rechercher une adresse" inputmode="text"></textarea>
+
+        <div id="time" class="tabbar">
+            <div class="tab tab-active" onclick=changeTab()>Ponctuel</div>
+            <div class="tab" onclick=changeTab()>Régulier</div>
+        </div>
+    
+        <div id="tab-content-once" class="tabbar-content shown">
+            <div class="choice-wrapper">Arriver le <input type="datetime-local" class="date-entry" name="arrive-time" value="2017-06-01T08:30"></div>
+        </div>
+
+        <div id="tab-content-regular" class="tabbar-content hidden">
+            <div class="choice-wrapper">
+                Jours
+                <div style="display: flex; flex-direction: row; gap: 5px;">
+                    <input class="day-checkbox" type="checkbox" name="day-monday" id="checkbox-day-monday">
+                    <label class="day-checkbox-label" for="checkbox-day-monday">L</label>
+                    <input class="day-checkbox" type="checkbox" name="day-tuesday" id="checkbox-day-tuesday">
+                    <label class="day-checkbox-label" for="checkbox-day-tuesday">M</label>
+                    <input class="day-checkbox" type="checkbox" name="day-wednesday" id="checkbox-day-wednesday">
+                    <label class="day-checkbox-label" for="checkbox-day-wednesday">M</label>
+                    <input class="day-checkbox" type="checkbox" name="day-thursday" id="checkbox-day-thursday">
+                    <label class="day-checkbox-label" for="checkbox-day-thursday">J</label>
+                    <input class="day-checkbox" type="checkbox" name="day-friday" id="checkbox-day-friday">
+                    <label class="day-checkbox-label" for="checkbox-day-friday">V</label>
+                    <input class="day-checkbox" type="checkbox" name="day-saturday" id="checkbox-day-saturday">
+                    <label class="day-checkbox-label" for="checkbox-day-saturday">S</label>
+                    <input class="day-checkbox" type="checkbox" name="day-sunday" id="checkbox-day-sunday">
+                    <label class="day-checkbox-label" for="checkbox-day-sunday">D</label>
+                </div>
+            </div>
+
+            <br>
+            <div class="choice-wrapper">Arriver à <input type="time" name="arrive-time" value="08:30" class="date-entry"></div>
+        </div>
+    </div>
+
+     <!-- <iframe
+        frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="map"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=2.292292833328247%2C48.85748697959105%2C2.2945311069488525%2C48.85985350891972&layer=mapni">
+    </iframe> -->
+
+
+    
+</body>
+</html>

@@ -1,0 +1,74 @@
+        <div id="time" class="tabbar">
+            <div class="tab tab-active" onclick=changeTab()>Ponctuel</div>
+            <div class="tab" onclick=changeTab()>Régulier</div>
+        </div>
+
+        <script type="text/javascript">
+            function toggleMenu() {
+                document.getElementById("content").classList.toggle("hidden");
+                document.getElementById("content").classList.toggle("shown");
+            }
+        </script>
+
+        <style>
+            .hidden {
+                display: none;
+            }
+
+            .shown {
+                display: block;
+            }
+        </style>
+        
+
+
+        <div id="activator" onclick=toggleMenu()>
+            Welcome my friend
+            <div id="content" class="shown">
+                Welcome home <br>
+                Hey everybody    
+            </div>
+        </div>
+
+
+
+
+
+
+        #navtop ul {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    z-index: 1;
+    padding: 15px;
+    list-style-type: none;
+    border-radius: 7px;
+    background-color: transparent;
+    padding-bottom: 10px;
+}
+
+#navtop ul li {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.8s cubic-bezier(0.25, 1.75, 0.5, 1);
+    pointer-events: none;
+    margin-top: 10px;
+}
+
+#navtop ul li:first-child {
+    margin-top: 10px;
+}
+
+#navtop ul li:last-child {
+    margin-bottom: 10px;
+}
+
+
+
+#navtop ul:hover li {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    transition-delay: calc(0.01s * (var(--i) + 1));
+}
