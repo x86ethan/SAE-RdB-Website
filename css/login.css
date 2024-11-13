@@ -1,48 +1,45 @@
 #logo{
     width: 2vh;
 }
-body > main > div{
+body > main{
     border: 0.3vh;
     border-style: outset;
     border-color: black;
-}
-
-#Mail:disabled {
-    background-color: #ccc; 
-    cursor: not-allowed;
-    opacity: 0.6;
+    text-align: center;
+    align-items: center;
 }
 
 
-input[type="email"]:valid + #Mail {
-    background-color: #4CAF50; /* Couleur pour le bouton actif */
+input{
+    height: 5vh;
+    width: 50vh;
+    border-radius: 1.5vh;
+    border-color: gray;
+    border-style: solid;
+    border-width: 0.1vh;
+    margin-bottom: 3vh;
+    font-size: large;
+}
+
+#text:valid + #ok {
+    background-color: #007AFF; /* Couleur pour le bouton actif */
     cursor: pointer;
-    opacity: 1;
+    opacity: 2;
     pointer-events: auto; /* Permet de rendre le bouton cliquable */
 }
 
 /* Style optionnel pour le bouton */
-#Mail {
-    width: 2.5vh;
-    height: 2.5vh;
+#ok {
+    display: inline-flex;
+    position:absolute;
+    width: 3vh;
+    height: 3vh;
     border-radius: 100%;
-    color: white;
-    transition: background-color 0.3s ease;
-}
-#Pwd{
-    display: none;
-}
-
-#togglePassword {
-    display: none;
+    color: rgb(24, 22, 22);
+    transition: background-color 1s ease;
+    align-items: center ;
+    
 }
 
-#togglePassword:checked ~ #Mail {
-    display: none;
-}
-
-#togglePassword:checked ~ #Pwd {
-    display: block;
-}
 
 
