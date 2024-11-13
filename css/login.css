@@ -1,6 +1,7 @@
 #logo{
     width: 2vh;
 }
+
 body > main{
     border: 0.3vh;
     border-style: outset;
@@ -25,7 +26,12 @@ input{
     background-color: #007AFF; /* Couleur pour le bouton actif */
     cursor: pointer;
     opacity: 2;
-    pointer-events: auto; /* Permet de rendre le bouton cliquable */
+}
+
+button{
+    display: block;
+    position: relative;
+    justify-content: right;
 }
 
 /* Style optionnel pour le bouton */
