@@ -12,17 +12,20 @@
 <body>
     <a href="index.html"><img src="./img/apple-logo.png" alt="logo_apple" id="logo"  ></a>
     <main>
-        <div>
+        <div id="login-window">
             
-            <legend>Connectez-vous</legend>
+            <legend>Se connecter</legend>
             <div> 
-                <form action="index.html" method="post"></form>
-                    <input type="email"  placeholder="AppleInc@icloud.com" required id="mail">
-                    <br>
+                <form action="index.html" method="post">
+                    <div class="input-field">
+                        <input type="email" required id="mail">
+                        <label for="">Courriel ou numéro de téléphone</label>
+                    </div>
 
-                    <button id="ok">➔</button>
-                    <input type="password" name="Pwd" id="text" placeholder="•••••••" required >
-                    
+                    <div class="input-field">
+                        <button id="ok">➔</button>
+                        <input type="password" name="Pwd" id="text" placeholder="•••••••" required >
+                    </div>
                 </form>
             </div>
         

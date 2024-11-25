@@ -2,16 +2,42 @@
     width: 2vh;
 }
 
+body {
+    height: 100vh;
+    width: 100vw;
+
+    padding: 0; margin: 0;
+}
+
 body > main{
-    border: 0.3vh;
-    border-style: outset;
-    border-color: black;
-    text-align: center;
+   
+    padding: 0;
+    margin: 0;
+
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+
+}
+
+#login-window {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    padding: 75px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
 }
 
 
-input{
+.input-field input {
     height: 5vh;
     width: 50vh;
     border-radius: 1.5vh;
@@ -19,7 +45,43 @@ input{
     border-style: solid;
     border-width: 0.1vh;
     margin-bottom: 3vh;
-    font-size: large;
+    font-size: 1em;
+    
+    padding-left: 10px;
+    padding: 5px 10px 0px 10px;
+}
+
+form .input-field {
+    position: relative;
+    width: 100%;
+    height: 40px;
+
+    margin: 20px 0;
+}
+
+
+.input-field label {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    
+    font-size: 1.2em;
+
+    user-select: none;
+    pointer-events: none;
+
+    transition: all 0.2s ease-in-out;
+    color: gray;
+}
+
+input::placeholder {
+    position: relative;
+    left: 0; bottom: 0;
+}
+
+.input-field input:focus ~ label {
+    top: 5px;
+    font-size: 1em;
 }
 
 #text:valid + #ok {
