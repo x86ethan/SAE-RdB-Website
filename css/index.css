@@ -98,6 +98,7 @@
 }
 
 #navtop #menu div {
+    font-family: 'SF Pro', sans-serif;
     opacity: 0;
     transform: translateY(-20px);
     animation: showBurgerMenu 0.5s forwards cubic-bezier(0.25, 1.75, 0.5, 1);

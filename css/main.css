@@ -10,6 +10,15 @@
     src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
 
+@font-face {
+    font-family: 'SF Pro';
+    src: url('/fonts/SF-Pro.woff2') format('woff2'),
+        url('/fonts/SF-Pro.woff') format('woff'),
+        url('/fonts/SF-Pro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 body, html {
     padding: 0;
@@ -18,7 +27,7 @@ body, html {
 }
 
 * {
-    font-family: 'San Francisco';
+    font-family: 'SF Pro';
 }
 
 .default-card {

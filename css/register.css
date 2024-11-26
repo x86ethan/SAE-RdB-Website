@@ -3,3 +3,25 @@
     position: absolute;
     fill: #06c;
 }
+
+main > h1 {
+    text-align: center;
+}
+.subheader-centered {
+    text-align: center;
+}
+
+.subheader-centered a {
+    color: #06c;
+    text-decoration: none;
+}
+
+.subheader-centered a:hover {
+    text-decoration: underline;
+}
+
+.subheader-centered span{
+    display: none;
+}
+
+
