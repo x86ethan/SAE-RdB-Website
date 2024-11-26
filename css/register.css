@@ -1,7 +1,11 @@
-.logo-top{
-    width: 2vh;
-    padding-top: 1%;
-    padding-left: 1%;
+.logo-top {
+    position: fixed;
+    top: 1%;
+    left: 1%;
+    width:2vh;
+    height: auto;
+    padding: 0;
+    z-index: 100;
 }
 
 main > h1 {
@@ -166,18 +170,41 @@ label {
     justify-content: center;
 }
 
-.submit-buttom input[type="submit"] {
+.submit-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 500px;
-    padding: 10px ;
+    max-width: 500px;
+}
+
+.submit-button-label {
+    font-family: 'SF Pro';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.12rem;
+    color: #fff;
+    pointer-events: none; 
+    z-index: 2;
+}
+
+.submit-button input[type="submit"] {
+    width: 100%;
+    padding: 15px;
     font-size: 1rem;
     color: #fff;
     background-color: #0071e3;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    position: relative;
+    z-index: 1;
 }
 
-.submit-buttom input[type="submit"]:hover {
+.submit-button input[type="submit"]:hover {
     animation: submit-in-progress 1s forwards;
 }
 

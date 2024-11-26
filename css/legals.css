@@ -1,8 +1,11 @@
-.logo-top{
+.logo-top {
+    position: fixed;
+    top: 1%;
+    left: 1%;
     width: 2vh;
-    padding-top: 1%;
-    padding-left: 1%;
-    position: relative;
+    height: auto;
+    padding: 0;
+    z-index: 100;
 }
 
 body {
