@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Apple Transports - Connection</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://appleid.cdn-apple.com/static/bin/cb3460663665/images/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/login.css">
     <script src="scripts/scripts.js"></script>
@@ -14,17 +15,27 @@
     <main>
         <div id="login-window">
             
-            <legend>Se connecter</legend>
+            <legend>Se connecter à Apple Transport</legend>
             <div> 
                 <form action="index.html" method="post">
                     <div class="input-field">
-                        <input type="email" required id="mail">
+                        <input type="email" required id="mail" placeholder=" ">
                         <label for="">Courriel ou numéro de téléphone</label>
                     </div>
 
                     <div class="input-field">
-                        <button id="ok">➔</button>
+                        
                         <input type="password" name="Pwd" id="text" placeholder="•••••••" required >
+                        <button id="ok">➔</button>
+                    </div>
+                    <div class="reg">
+                        <div>
+                            <a href="mdpOublié.html">Mot de passe oublié ?</a>
+                        </div>
+                        <div>Pas de compte Collaborateur ?
+                            <a href="Register.html">créer un compte</a>
+                        </div>
+                        
                     </div>
                 </form>
             </div>
