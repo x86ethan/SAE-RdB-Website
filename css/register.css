@@ -124,7 +124,7 @@ main > div * {
 .email-box, .password-box {
     width: 480px;
     position: relative;
-    margin-right: 2vw;
+    margin-right: 1vw;
 }
 
 .form-textbox-input, 
