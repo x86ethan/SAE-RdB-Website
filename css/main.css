@@ -19,6 +19,24 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'SF Pro Display Heavy';
+    src: url('/fonts/SF-Pro-Display-Heavy.ttf') format('truetype'),
+        url('/fonts/SF-Pro-Display-Heavy.woff') format('woff'),
+        url('/fonts/SF-Pro-Display-Heavy.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display Black';
+    src: url('/fonts/SF-Pro-Display-Black.woff2') format('woff2'),
+        url('/fonts/SF-Pro-Display-Black.woff') format('woff'),
+        url('/fonts/SF-Pro-Display-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 body, html {
     padding: 0;

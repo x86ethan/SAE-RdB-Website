@@ -1,9 +1,3 @@
-.external-link .external-link__icon {
-    height: 1.12em;
-    position: absolute;
-    fill: #06c;
-}
-
 main > h1 {
     text-align: center;
 }
@@ -11,9 +5,19 @@ main > h1 {
     text-align: center;
 }
 
+.external-link .external-link__icon {
+    height: 1.12em;
+    fill: #06c;
+    vertical-align: middle;
+}
+
+/* Lien avec texte dans .subheader-centered */
 .subheader-centered a {
     color: #06c;
     text-decoration: none;
+    line-height: 1.5;
+    display: inline-flex;
+    align-items: center;
 }
 
 .subheader-centered a:hover {
@@ -24,4 +28,150 @@ main > h1 {
     display: none;
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: 'SF Pro Display Heavy';
+}
+
+main > div * {
+    font-family: 'SF Pro';
+}
+.name-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+/* Style des boîtes de texte individuelles */
+.form-textbox-1, .form-textbox-2 {
+    flex: 1;         /* Les champs vont prendre une largeur égale */
+    position: relative; /* Pour bien positionner les labels */
+}
+
+/* Style des inputs pour qu'ils remplissent les boîtes */
+.form-textbox-input {
+    width: 100%;    /* Prend toute la largeur du parent */
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box; /* Assure que le padding ne dépasse pas la largeur totale */
+}
+
+/* Style des labels */
+.form-textbox-label {
+    position: absolute; /* Position absolue pour que le label reste à l'intérieur du champ */
+    top: 50%; /* Centre verticalement le label */
+    left: 10px; /* Décalage à gauche */
+    transform: translateY(-50%); /* Centre parfaitement le label */
+    font-size: 14px;
+    color: #888; /* Couleur grise pour le label */
+    pointer-events: none; /* Le label ne doit pas interférer avec l'input */
+}
+
+
+/* Subheader styling */
+.subheader-centered {
+    margin-bottom: 20px;
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Wrapper styling */
+.wrapper, .wrapper-2, .wrapper-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 15px;
+}
+
+/* Form input fields with floating labels */
+.form-textbox, .email-box, .password-box {
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.form-textbox-input, 
+.form-emailbox-input, 
+.form-passwordbox-input {
+    width: 100%;
+    padding: 10px;
+    padding-top: 20px; /* Padding to make space for label */
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background: #fff;
+}
+
+/* Floating labels */
+label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 0.9rem;
+    color: #888;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+/* When the input is focused or has content */
+.form-textbox-input:focus + label,
+.form-textbox-input:not(:placeholder-shown) + label,
+.form-emailbox-input:focus + label,
+.form-emailbox-input:not(:placeholder-shown) + label,
+.form-passwordbox-input:focus + label,
+.form-passwordbox-input:not(:placeholder-shown) + label {
+    top: -5px;
+    left: 10px;
+    font-size: 0.75rem;
+    color: #0071e3;
+}
+
+/* Submit button */
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-buttom input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #0071e3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-buttom input[type="submit"]:hover {
+    animation: submit-in-progress 1s forwards;
+}
+
+@keyframes submit-in-progress {
+    to {
+        background-color: #06c;
+        scale: 1.1;
+    }
+}

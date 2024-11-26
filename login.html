@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Apple Transports - Connection</title>
+    <title>Apple Transports - Connexion</title>
     <link rel="shortcut icon" type="image/x-icon" href="https://appleid.cdn-apple.com/static/bin/cb3460663665/images/favicon.ico">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/login.css">
     <script src="scripts/scripts.js"></script>
 </head>
@@ -14,24 +14,23 @@
     <a href="index.html"><img src="./img/apple-logo.png" alt="logo_apple" id="logo"  ></a>
     <main>
         <div id="login-window">
-            
             <legend>Se connecter à Apple Transport</legend>
             <div> 
-                <form action="index.html" method="post">
+                <form action="/Connecté/Compte.html" method="post">
                     <div class="input-field">
-                        <input type="email" required id="mail" placeholder=" ">
-                        <label for="">Courriel ou numéro de téléphone</label>
+                        <input type="email" required id="mail" placeholder=" " class="email-field">
+                        <label>Courriel ou numéro de téléphone</label>
                     </div>
                     <div class="input-field">
-                        <input type="password" name="Pwd" id="text" placeholder="•••••••" required >
+                        <input type="password" name="Pwd" id="pwd" placeholder="•••••••" required class="password-field" >
                         <button id="ok">➔</button>
                     </div>
                     <div class="reg">
                         <div>
-                            <a href="mdpOublié.html">Mot de passe oublié ?</a><svg viewBox="0 0 268.0201416015625 158.116943359375" version="1.1" xmlns="http://www.w3.org/2000/svg" class="external-link__icon layout-box"><g transform="matrix(1 0 0 1 85.49510009765618 114.2884521484375)"><path d="M84.5703-17.334L84.5215-66.4551C84.5215-69.2383 82.7148-71.1914 79.7852-71.1914L30.6641-71.1914C27.9297-71.1914 26.0742-69.0918 26.0742-66.748C26.0742-64.4043 28.1738-62.4023 30.4688-62.4023L47.4609-62.4023L71.2891-63.1836L62.207-55.2246L13.8184-6.73828C12.9395-5.85938 12.4512-4.73633 12.4512-3.66211C12.4512-1.31836 14.5508 0.878906 16.9922 0.878906C18.1152 0.878906 19.1895 0.488281 20.0684-0.439453L68.5547-48.877L76.6113-58.0078L75.7324-35.2051L75.7324-17.1387C75.7324-14.8438 77.7344-12.6953 80.127-12.6953C82.4707-12.6953 84.5703-14.6973 84.5703-17.334Z"></path></g>
+                            <a href="mdpoublie.html">Mot de passe oublié ?  <svg viewBox="0 0 268.0201416015625 158.116943359375" version="1.1" xmlns="http://www.w3.org/2000/svg" class="external-link__icon layout-box"><g transform="matrix(1 0 0 1 85.49510009765618 114.2884521484375)"><path d="M84.5703-17.334L84.5215-66.4551C84.5215-69.2383 82.7148-71.1914 79.7852-71.1914L30.6641-71.1914C27.9297-71.1914 26.0742-69.0918 26.0742-66.748C26.0742-64.4043 28.1738-62.4023 30.4688-62.4023L47.4609-62.4023L71.2891-63.1836L62.207-55.2246L13.8184-6.73828C12.9395-5.85938 12.4512-4.73633 12.4512-3.66211C12.4512-1.31836 14.5508 0.878906 16.9922 0.878906C18.1152 0.878906 19.1895 0.488281 20.0684-0.439453L68.5547-48.877L76.6113-58.0078L75.7324-35.2051L75.7324-17.1387C75.7324-14.8438 77.7344-12.6953 80.127-12.6953C82.4707-12.6953 84.5703-14.6973 84.5703-17.334Z"></path></g></svg></a>
                         </div>
                         <div>Pas de compte Collaborateur ?
-                            <a href="Register.html">Créez le vôtre dès à présent</a><svg viewBox="0 0 268.0201416015625 158.116943359375" version="1.1" xmlns="http://www.w3.org/2000/svg" class="external-link__icon layout-box"><g transform="matrix(1 0 0 1 85.49510009765618 114.2884521484375)"><path d="M84.5703-17.334L84.5215-66.4551C84.5215-69.2383 82.7148-71.1914 79.7852-71.1914L30.6641-71.1914C27.9297-71.1914 26.0742-69.0918 26.0742-66.748C26.0742-64.4043 28.1738-62.4023 30.4688-62.4023L47.4609-62.4023L71.2891-63.1836L62.207-55.2246L13.8184-6.73828C12.9395-5.85938 12.4512-4.73633 12.4512-3.66211C12.4512-1.31836 14.5508 0.878906 16.9922 0.878906C18.1152 0.878906 19.1895 0.488281 20.0684-0.439453L68.5547-48.877L76.6113-58.0078L75.7324-35.2051L75.7324-17.1387C75.7324-14.8438 77.7344-12.6953 80.127-12.6953C82.4707-12.6953 84.5703-14.6973 84.5703-17.334Z"></path></g>
+                            <a href="Register.html">Créez le vôtre dès à présent  <svg viewBox="0 0 268.0201416015625 158.116943359375" version="1.1" xmlns="http://www.w3.org/2000/svg" class="external-link__icon layout-box"><g transform="matrix(1 0 0 1 85.49510009765618 114.2884521484375)"><path d="M84.5703-17.334L84.5215-66.4551C84.5215-69.2383 82.7148-71.1914 79.7852-71.1914L30.6641-71.1914C27.9297-71.1914 26.0742-69.0918 26.0742-66.748C26.0742-64.4043 28.1738-62.4023 30.4688-62.4023L47.4609-62.4023L71.2891-63.1836L62.207-55.2246L13.8184-6.73828C12.9395-5.85938 12.4512-4.73633 12.4512-3.66211C12.4512-1.31836 14.5508 0.878906 16.9922 0.878906C18.1152 0.878906 19.1895 0.488281 20.0684-0.439453L68.5547-48.877L76.6113-58.0078L75.7324-35.2051L75.7324-17.1387C75.7324-14.8438 77.7344-12.6953 80.127-12.6953C82.4707-12.6953 84.5703-14.6973 84.5703-17.334Z"></path></g></svg></a>
                         </div>
                         
                     </div>
