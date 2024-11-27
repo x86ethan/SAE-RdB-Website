@@ -1,7 +1,16 @@
-#logo{
-    width: 2vh;
-    padding-top: 1%;
-    padding-left: 1%;
+.logo-top {
+    position: relative;
+    height: 48px;
+    width:17px;
+    height: auto;
+    padding: 0;
+    z-index: 100;
+    fill: #1C1C1E;
+    left: 1%;
+}
+
+.logo-top:hover {
+    fill: black;
 }
 
 body {

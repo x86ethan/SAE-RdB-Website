@@ -1,13 +1,16 @@
 .logo-top {
-    position: fixed;
-    top: 1%;
-    left: 1%;
-    width: 2vh;
+    position: relative;
+    height: 48px;
+    width:17px;
     height: auto;
     padding: 0;
     z-index: 100;
+    fill: #1C1C1E;
 }
 
+.logo-top:hover {
+    fill: black;
+}
 body {
     line-height: 1.6;
     background-color: #f4f4f4;
