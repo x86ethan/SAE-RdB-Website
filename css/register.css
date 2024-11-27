@@ -24,7 +24,6 @@ main > h1 {
     top: 1px;
 }
 
-/* Lien avec texte dans .subheader-centered */
 .subheader-centered a {
     color: #06c;
     text-decoration: none;
@@ -73,17 +72,11 @@ h1 {
 main > div * {
     font-family: 'SF Pro';
 }
-.name-wrapper {
+.name-wrapper, .id-wrapper, .email-wrapper{
     display: flex;
     gap: 10px;
     max-width: 500px;
     width: 100%;
-}
-
-.form-textbox-1, .form-textbox-2 {
-    flex: 1;
-    position: relative;
-    max-width: 100%;
 }
 
 .form-textbox-input {
@@ -110,7 +103,7 @@ main > div * {
     line-height: 1.5;
 }
 
-.wrapper, .wrapper-2, .wrapper-3 {
+.wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,15 +113,18 @@ main > div * {
 }
 
 .form-textbox{
-    width: 500px;
+    width: 100%;
     position: relative;
     margin-bottom: 15px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
 }
 
-.email-box, .password-box {
-    width: 480px;
+.email-box, .password-box, .password-wrapper {
+    width: 100%;
     position: relative;
-    margin-right: 1vw;
+    display: flex;
 }
 
 .form-textbox-input, 
@@ -175,7 +171,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 500px;
+    width: 100%;
     max-width: 500px;
 }
 
@@ -193,6 +189,7 @@ label {
 
 .submit-button input[type="submit"] {
     width: 100%;
+    max-width: 500px;
     padding: 15px;
     font-size: 1rem;
     color: #fff;
@@ -211,5 +208,61 @@ label {
 @keyframes submit-in-progress {
     to {
         background-color: #06c;
+    }
+}
+
+@keyframes widthchange {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+@keyframes widthchangeback {
+    from {
+        width: 60%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes fontchangetext {
+    from {
+        font-size: 1rem;
+    }
+
+    to {
+        font-size: .9rem;
+    }
+}
+
+@keyframes fontchangeh1 {
+    from {
+        font-size: 2.25rem;
+    }
+
+    to {
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        animation: fontchangeh1 .5s forwards;
+    }
+
+    .subheader-centered {
+        animation: fontchangetext .5s forwards;
+    }
+
+    .name-wrapper, .id-wrapper, .email-wrapper, .password-wrapper, .submit-button {
+        animation: widthchange .5s forwards;
+    }
+
+    .submit-button input[type="submit"] {
+        padding: 12px;
     }
 }
