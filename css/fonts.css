@@ -36,3 +36,30 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'SF Pro Display Light';
+    src: url('/fonts/SF-Pro-Display-Light.woff2') format('woff2'),
+        url('/fonts/SF-Pro-Display-Light.woff') format('woff'),
+        url('/fonts/SF-Pro-Display-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display Medium';
+    src: url('/fonts/SF-Pro-Display-Medium.woff2') format('woff2'),
+        url('/fonts/SF-Pro-Display-Medium.woff') format('woff'),
+        url('/fonts/SF-Pro-Display-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display Regular';
+    src: url('/fonts/SF-Pro-Display-Regular.woff2') format('woff2'),
+        url('/fonts/SF-Pro-Display-Regular.woff') format('woff'),
+        url('/fonts/SF-Pro-Display-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
