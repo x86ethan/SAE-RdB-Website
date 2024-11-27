@@ -1,0 +1,77 @@
+.logo-top {
+    position: relative;
+    height: 48px;
+    width:17px;
+    height: auto;
+    padding: 0;
+    z-index: 100;
+    fill: #1C1C1E;
+}
+
+.logo-top:hover {
+    fill: black;
+}
+
+.nav-top {
+    width: max-content;
+    height: 48px;
+    justify-content: center;
+    background-color: aqua;
+    padding: 0 16px 0 16px;
+}
+
+.nav-subtop {
+    height: 48px;
+    max-width: 980px;
+}
+
+.nav-subtop-background::after{
+    content: '';
+    display: block;
+    height: 1px; /* Épaisseur de la ligne */
+    width: 100%; /* Longueur de la ligne */
+    background-color: #d2d2d2; /* Couleur grise */
+    margin: -2px auto 0; /* Centré et espacé en bas */
+}
+
+.nav-subtop-content {
+    font-family: 'SF Pro';
+    font-size: 19px;
+    font-weight: 600;
+    position: relative;
+    line-height: 3.15rem;
+    margin: 0 auto 0 28.5px;
+    padding: 0 0 0 16px;
+}
+
+.subheader-justify-left {
+    font-family: 'SF Pro';
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    right: 6px;
+    top: 1px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 459.59px;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: start;
+    height: 100%;
+    text-align: center
+}
+
+h1 {
+    font-family: 'SF Pro';
+    text-align: center;
+    font-size: 2.25rem;
+}
