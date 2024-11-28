@@ -1,0 +1,25 @@
+.logo-top {
+    position: relative;
+    height: 48px;
+    width:17px;
+    height: auto;
+    z-index: 100;
+    fill: #1C1C1E;
+    margin-top: 1%;
+    left: 3%;
+}
+
+.logo-top:hover {
+    fill: black;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0; margin: 0;
+}
+
+hr{
+    width: 90%;
+    text-align: center;
+}
