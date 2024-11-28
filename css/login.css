@@ -93,6 +93,8 @@ form .input-field {
     color: gray;
 }
 
+
+
 input::placeholder {
     position: relative;
     left: 0; bottom: 0;
@@ -104,7 +106,7 @@ input::placeholder {
 }
 
 .input-field input {
-    height: 5vh;
+    height: 50px;
     width: 50vh;
     border-color: gray;
     border-style: solid;
@@ -119,20 +121,32 @@ input::placeholder {
 
 .input-field button {
     position: absolute; /* Positionnement indépendant de l'écoulement normal */
-    right: 5px; /* Distance de la bordure droite de l'input */
+    right: 10px; /* Distance de la bordure droite de l'input */
     top: 70%; /* Centre verticalement */
     transform: translateY(-50%); /* Ajuste pour centrer parfaitement */
     height: calc(100% - 10px); /* Bouton un peu plus petit que l'input */
     border-radius: 50%;
-    border-style: solid;
-    border-color: rgb(150, 150, 150);
+    border: 1px solid #494949;
+    background-color: white;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 10px;
 
+    font-family: "SF Pro";
+
+    aspect-ratio: 1 / 1;
+    height: auto;
 }
+
+#login-image {
+
+    height: 20px;
+    width: auto;
+
+}
+
 /*lilian - Animation dans les Input*/
 .input-field input:focus ~ label,
 .input-field input:not(:placeholder-shown) ~ label {
@@ -151,6 +165,11 @@ input::placeholder {
     border-bottom-right-radius: 1.5vh;  
 }
 
+#ok {
+
+
+
+}
 
 #text:valid + #ok {
     color: #565657;
