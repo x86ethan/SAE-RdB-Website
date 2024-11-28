@@ -12,6 +12,20 @@
     fill: black;
 }
 
+.wrapper-subnav {
+    width: 100%;
+    max-width: 1994px;
+}
+
+.nav-subtop-background::after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #d2d2d2;
+    margin: -2px auto 0;
+}
+
 .nav-top {
     width: max-content;
     height: 48px;
@@ -22,7 +36,10 @@
 
 .nav-subtop {
     height: 52px;
-    max-width: 1864px;
+    max-width: 980px;
+    width: 100%;
+    margin: auto 453px auto 453px;
+    padding: 0 22px 0 22px;
 }
 
 .nav-subtop-content {
@@ -31,8 +48,6 @@
     font-weight: 600;
     position: relative;
     line-height: 3.15rem;
-    margin: auto 420px auto 420px;
-    padding: 0 22px 0 22px;
     max-width: 980px;
     height: 52px;
 }
@@ -57,9 +72,9 @@ main {
     display: flex;
     position: relative;
     flex-direction: column;
-    margin: auto 420px auto 420px;
+    margin: auto 453px auto 453px;
     padding: 0 22px 0 22px;
-    max-width: 980px;   
+    max-width: 1994px;   
     height: 100%;
 }
 
