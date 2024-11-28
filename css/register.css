@@ -5,7 +5,7 @@
     height: auto;
     padding: 0;
     z-index: 100;
-    fill: #1C1C1E;
+    fill: #242426;
     left: 1%;
 }
 
@@ -101,7 +101,7 @@ main > div * {
 }
 
 .radio-call-label {
-    
+
 }
 
 .subheader-centered {
@@ -264,7 +264,7 @@ label {
 
 @keyframes filllogo {
     from {
-        fill: #1C1C1E;
+        fill: #242426;
     }
 
     to {
