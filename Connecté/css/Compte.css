@@ -13,13 +13,21 @@
     fill: black;
 }
 
+.nav-subtop-background::after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #d2d2d2;
+    margin: -2px auto 0;
+}
+
 body {
     height: 100%;
     width: 100%;
     padding: 0; margin: 0;
 }
 
-hr{
-    width: 90%;
-    text-align: center;
+nav{
+    display: inline-flex;
 }
