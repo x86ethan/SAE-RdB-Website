@@ -21,17 +21,8 @@
 }
 
 .nav-subtop {
-    height: 48px;
-    max-width: 980px;
-}
-
-.nav-subtop-background::after{
-    content: '';
-    display: block;
-    height: 1px;
-    width: 100%;
-    background-color: #d2d2d2;
-    margin: -2px auto 0;
+    height: 52px;
+    max-width: 1864px;
 }
 
 .nav-subtop-content {
@@ -40,13 +31,14 @@
     font-weight: 600;
     position: relative;
     line-height: 3.15rem;
-    margin: 0 auto 0 28.5px;
-    padding: 0 0 0 16px;
+    margin: auto 420px auto 420px;
+    padding: 0 22px 0 22px;
+    max-width: 980px;
+    height: 52px;
 }
 
 .subheader-justify-left {
     font-family: 'SF Pro';
-    text-align: center;
     vertical-align: middle;
     position: relative;
     right: 6px;
@@ -65,13 +57,58 @@ main {
     display: flex;
     position: relative;
     flex-direction: column;
-    align-items: start;
+    margin: auto 420px auto 420px;
+    padding: 0 22px 0 22px;
+    max-width: 980px;   
     height: 100%;
-    text-align: center
 }
 
 h1 {
     font-family: 'SF Pro';
-    text-align: center;
+    text-align: start;
     font-size: 2.25rem;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .nav-top {
+        width: max-content;
+        height: 48px;
+        justify-content: center;
+        background-color: aqua;
+        padding: 0 16px 0 16px;
+    }
+    
+    .nav-subtop {
+        height: 48px;
+        max-width: 980px;
+    }
+    
+    .nav-subtop-background::after{
+        content: '';
+        display: block;
+        height: 1px;
+        width: 100%;
+        background-color: #d2d2d2;
+        margin: -2px auto 0;
+    }
+    
+    .nav-subtop-content {
+        font-family: 'SF Pro';
+        font-size: 19px;
+        font-weight: 600;
+        position: relative;
+        line-height: 3.15rem;
+        margin: 0 auto 0 28.5px;
+        padding: 0 0 0 16px;
+    }
+    
+    .subheader-justify-left {
+        font-family: 'SF Pro';
+        text-align: center;
+        vertical-align: middle;
+        position: relative;
+        right: 6px;
+        top: 1px;
+    }
 }
