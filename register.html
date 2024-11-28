@@ -8,6 +8,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="/icons/favicon1.ico">
     <link rel="stylesheet" href="css/register.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="scripts/updateTitle.js"></script>
     
 </head>
@@ -60,13 +61,45 @@
                     </div>
                 </div>
                 <div class="wrapper">
-                    <div class="submit-button">
-                        <input type="submit" aria-labelledby="submit-label_1" class="submit-button-input" placeholder="" value>
-                        <label id="submit-label_1" aria-hidden="true" class="submit-button-label">Continuer</label>
+                    <div class="validation-wrapper">
+                        <div class="validation-radio-box">
+                            <div class="validation-radio-box-content">Saisissez un numéro de téléphone pouvant recevoir des codes de validation par SMS ou appel téléphonique lors d’une connexion.</div>
+                            <div class="validation-radio-box-content">Valider à l’aide d’un :</div>
+                            <div class="validation-input-sms">
+                                <input type="radio" aria-labelledby="radio-sms_label" class="radio-sms-input" id="radio-sms-input-0" placeholder="" value>
+                                <label id="radio-sms_label" aria-hidden="true" class="radio-sms-label">SMS</label>
+                            </div>
+                            <div class="validation-input-call">
+                                <input type="radio" aria-labelledby="radio-call_label" class="radio-call-input" id="radio-call-input-0" placeholder="" value >
+                                <label id="radio-call_label" aria-hidden="true" class="radio-call-label">SMS</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="submit-button">
+                            <input type="submit" aria-labelledby="submit-label_1" class="submit-button-input" placeholder="" value>
+                            <label id="submit-label_1" aria-hidden="true" class="submit-button-label">Continuer</label>
+                        </div>
                     </div>
                 </div>
             </div>
         </form>
     </main>
+
+    <footer>
+
+        <div class="footer-wrapper">
+            <div class="footer-label">Vous pouvez aussi effectuer des achats dans un <a href="">Apple Store</a> ou <a href="">chez un revendeur</a>. Ou appeler le 0800 046 046.</div>
+            <div class="footer-label">Copyright © 2024 Apple Inc. Tous droits réservés.</div>
+
+            <div class="footing">
+                <a href="legals.html">Mention Légales</a>
+                <a href="">Conditions d'utilisation</a>
+                <a href="">Conditions Générales de Vente</a>
+                <a href="">Plan du Site</a>
+            </div>
+        </div>
+
+    </footer>
 </body>
 </html>

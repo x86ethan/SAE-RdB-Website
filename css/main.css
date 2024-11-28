@@ -10,38 +10,11 @@
     src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
 
-@font-face {
-    font-family: 'SF Pro';
-    src: url('/fonts/SF-Pro.woff2') format('woff2'),
-        url('/fonts/SF-Pro.woff') format('woff'),
-        url('/fonts/SF-Pro.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SF Pro Display Heavy';
-    src: url('/fonts/SF-Pro-Display-Heavy.ttf') format('truetype'),
-        url('/fonts/SF-Pro-Display-Heavy.woff') format('woff'),
-        url('/fonts/SF-Pro-Display-Heavy.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SF Pro Display Black';
-    src: url('/fonts/SF-Pro-Display-Black.woff2') format('woff2'),
-        url('/fonts/SF-Pro-Display-Black.woff') format('woff'),
-        url('/fonts/SF-Pro-Display-Black.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 
 body, html {
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    overflow: auto;
 }
 
 * {
@@ -58,4 +31,58 @@ body, html {
 
 .hidden  {
     display: none !important;
+}
+
+
+footer {
+
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    padding: 22px 0;
+
+    font-size:  ;
+    line-height: 1.5em;
+    color: #6e6e73;
+    
+}
+
+.footer-wrapper {
+
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 22px;
+}
+
+.footer-label a {
+
+    color: #06c;
+    text-decoration: none;
+
+}
+
+.footer-label a:hover {
+    text-decoration: underline;
+}
+
+.footing a {
+
+    color: #6e6e73;
+    text-decoration: none;
+
+}
+
+.footing a:nth-child(n+2)::before {
+
+    content: "|";
+    color: #929297;
+    
+    --spacing: 10px;
+    padding-left: calc(var(--spacing) / 2);
+    padding-right: calc(var(--spacing) / 2);
+
+}
+
+.footing a:hover {
+    text-decoration: underline;
 }

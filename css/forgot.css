@@ -43,13 +43,13 @@
 }
 
 .nav-subtop-content {
-    font-family: 'SF Pro';
-    font-size: 19px;
+    font-family: 'SF Pro Display Regular';
+    font-size: 21px;
     font-weight: 600;
     position: relative;
     line-height: 3.15rem;
     max-width:max-content;
-    letter-spacing: 0.022rem;
+    letter-spacing: 0.033rem;
     width: 100%;
 }
 
