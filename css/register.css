@@ -83,6 +83,27 @@
     color: #06c;
 }
 
+.informations {
+    text-align: center;
+    padding: 15px;
+    font-family: 'SF Pro';
+    font-size: 15.5px;
+}
+
+.informations a {
+    color: #06c;
+    text-decoration: none;
+}
+
+.informations a:hover {
+    text-decoration: underline;
+}
+.svg-icon-inline-chevron-right {
+    height: 10px;
+    margin: 0 0 -1px 0;
+    fill: #06c;
+}
+
 main > h1 {
     text-align: center;
 }
