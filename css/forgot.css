@@ -1,18 +1,23 @@
 .logo-top {
     position: relative;
-    height: 48px;
-    width:17px;
-    height: auto;
+    height: 44px;
+    width:14px;
     padding: 0;
     z-index: 100;
-    fill: #1C1C1E;
+    fill: #363638;
+    padding: 0px 12px 0 10px;
 }
 
 .logo-top:hover {
-    fill: black;
+    animation: filllogo .32s forwards;
+}
+
+.logo-top:not(:hover){
+    animation: nofilllogo .32s forwards;
 }
 
 .wrapper-subnav {
+    display: flex;
     width: 100%;
     max-width: 1994px;
 }
@@ -21,17 +26,17 @@
     content: '';
     display: block;
     height: 1px;
-    width: 100%;
+    width: 980px;
     background-color: #d2d2d2;
-    margin: -2px auto 0;
+    margin: -4px auto 0;
 }
 
 .nav-top {
-    width: max-content;
+    width: 980px;
     height: 48px;
     justify-content: center;
-    background-color: aqua;
-    padding: 0 16px 0 16px;
+    margin: 0 436.5px 0 436.5px;
+    padding: 0 22px 0 10px;
 }
 
 .nav-subtop {
@@ -46,19 +51,57 @@
     font-family: 'SF Pro Display Regular';
     font-size: 21px;
     font-weight: 600;
-    position: relative;
     line-height: 3.15rem;
     max-width:max-content;
     letter-spacing: 0.033rem;
     width: 100%;
+    display: inline-block;
+    white-space: nowrap;
+    margin: -4px;
 }
 
 .subheader-justify-left {
     font-family: 'SF Pro';
     vertical-align: middle;
-    position: relative;
     right: 6px;
     top: 1px;
+}
+
+.nav-subtop-content-right {
+    display: inline-block; 
+    white-space: nowrap;
+    margin: -4px 0 0 373px;
+    padding: 0 0 5px 0;
+    font-family: 'SF Pro';
+    font-size: 14px;
+    line-height: 22px;
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-subtop-content-right:hover {
+    color: #06c;
+}
+
+.informations {
+    text-align: center;
+    padding: 15px;
+    font-family: 'SF Pro';
+    font-size: 15.5px;
+}
+
+.informations a {
+    color: #06c;
+    text-decoration: none;
+}
+
+.informations a:hover {
+    text-decoration: underline;
+}
+.svg-icon-inline-chevron-right {
+    height: 10px;
+    margin: 0 0 -1px 0;
+    fill: #06c;
 }
 
 body {
