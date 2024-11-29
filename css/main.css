@@ -34,55 +34,48 @@ body, html {
 }
 
 
-footer {
-
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
-    padding: 22px 0;
-
-    font-size:  ;
-    line-height: 1.5em;
+.footer {
+    width: 100%;
+    padding: 35px 0;
     color: #6e6e73;
-    
+    text-align: left;
+    line-height: 1.5em;
+    font-size: 13px;
 }
 
 .footer-wrapper {
-
+    width: 100%;
     max-width: 980px;
     margin: 0 auto;
-    padding: 0 22px;
+    padding: 0 0 0 0px;
 }
 
-.footer-label a {
+.footer-label-0 {
+    padding: 0 0 3px 0;
+}
 
+.footer-label-0 a {
     color: #06c;
     text-decoration: none;
-
 }
 
-.footer-label a:hover {
+.footer-label-0 a:hover {
     text-decoration: underline;
 }
 
 .footing a {
-
-    color: #6e6e73;
+    color: #424245;
     text-decoration: none;
-
 }
 
 .footing a:nth-child(n+2)::before {
-
     content: "|";
-    color: #929297;
-    
+    color: #d2d2d7;
     --spacing: 10px;
     padding-left: calc(var(--spacing) / 2);
     padding-right: calc(var(--spacing) / 2);
-
 }
 
 .footing a:hover {
     text-decoration: underline;
-}
+} 

@@ -38,6 +38,15 @@
 }
 
 @font-face {
+    font-family: 'SF Pro Display Regular';
+    src: url('/fonts/SF-Pro-Display-Regular.ttf') format('truetype'),
+        url('/fonts/SF-Pro-Display-Regular.woff') format('woff'),
+        url('/fonts/SF-Pro-Display-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'SF Pro Display Light';
     src: url('/fonts/SF-Pro-Display-Light.woff2') format('woff2'),
         url('/fonts/SF-Pro-Display-Light.woff') format('woff'),
@@ -60,6 +69,42 @@
     src: url('/fonts/SF-Pro-Display-Regular.woff2') format('woff2'),
         url('/fonts/SF-Pro-Display-Regular.woff') format('woff'),
         url('/fonts/SF-Pro-Display-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text Regular';
+    src: url('/fonts/SF-Pro-Text-Regular.woff2') format('woff2'),
+        url('/fonts/SF-Pro-Text-Regular.woff') format('woff'),
+        url('/fonts/SF-Pro-Text-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text Thin';
+    src: url('/fonts/SF-Pro-Text-Thin.woff2') format('woff2'),
+        url('/fonts/SF-Pro-Text-Thin.woff') format('woff'),
+        url('/fonts/SF-Pro-Text-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text Light';
+    src: url('/fonts/SF-Pro-Text-Light.woff2') format('woff2'),
+        url('/fonts/SF-Pro-Text-Light.woff') format('woff'),
+        url('/fonts/SF-Pro-Text-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text Medium';
+    src: url('/fonts/SF-Pro-Text-Medium.woff2') format('woff2'),
+        url('/fonts/SF-Pro-Text-Medium.woff') format('woff'),
+        url('/fonts/SF-Pro-Text-Medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

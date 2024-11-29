@@ -1,16 +1,86 @@
 .logo-top {
-    position: fixed;
-    height: 48px;
-    width:17px;
-    height: auto;
+    position: relative;
+    height: 44px;
+    width:14px;
     padding: 0;
     z-index: 100;
-    fill: #242426;
-    left: 1%;
+    fill: #363638;
+    padding: 0px 12px 0 12px;
 }
 
 .logo-top:hover {
-    animation: filllogo .24s forwards;
+    animation: filllogo .32s forwards;
+}
+
+.logo-top:not(:hover){
+    animation: nofilllogo .32s forwards;
+}
+
+.wrapper-subnav {
+    display: flex;
+    width: 100%;
+    max-width: 1994px;
+}
+
+.nav-subtop-background::after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 980px;
+    background-color: #d2d2d2;
+    margin: -4px auto 0;
+}
+
+.nav-top {
+    width: 980px;
+    height: 48px;
+    justify-content: center;
+    margin: 0 436.5px 0 436.5px;
+    padding: 0 22px 0 10px;
+}
+
+.nav-subtop {
+    height: 52px;
+    max-width: 980px;
+    width: 100%;
+    margin: auto 438.5px auto 438.5px;
+    padding: 0 22px 0 22px;
+}
+
+.nav-subtop-content {
+    font-family: 'SF Pro Display Regular';
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 3.15rem;
+    max-width:max-content;
+    letter-spacing: 0.033rem;
+    width: 100%;
+    display: inline-block;
+    white-space: nowrap;
+    margin: -4px;
+}
+
+.subheader-justify-left {
+    font-family: 'SF Pro';
+    vertical-align: middle;
+    right: 6px;
+    top: 1px;
+}
+
+.nav-subtop-content-right {
+    display: inline-block; 
+    white-space: nowrap;
+    margin: -4px 0 0 373px;
+    padding: 0 0 5px 0;
+    font-family: 'SF Pro';
+    font-size: 14px;
+    line-height: 22px;
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-subtop-content-right:hover {
+    color: #06c;
 }
 
 main > h1 {
@@ -52,13 +122,22 @@ body, html {
     height: 100%;
 }
 
+body {
+    display: flex;
+    flex-direction: column; /* Disposer les éléments verticalement */
+    min-height: 100vh; /* Hauteur minimale de la vue */
+    font-family: Arial, sans-serif; /* Exemple de police */
+}
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 100%;
     text-align: center;
+    overflow-y: auto;
+    flex-grow: 1;
 }
 
 .title-div h1 {
@@ -94,14 +173,7 @@ main > div * {
     font-size: 14px;
     color: #888; 
     pointer-events: none;
-}
-.radio-sms-label {
-    position: absolute;
-    top: 50%;
-}
-
-.radio-call-label {
-
+    font-size: 1rem;
 }
 
 .subheader-centered {
@@ -151,6 +223,7 @@ main > div * {
 
 .form-textbox-input:focus, .form-emailbox-input:focus, .form-passwordbox-input:focus {
     border: 2px solid #0071e3;
+    padding-top: 18px;
 }
 
 label {
@@ -169,9 +242,87 @@ label {
 .form-emailbox-input:not(:placeholder-shown) + label,
 .form-passwordbox-input:focus + label,
 .form-passwordbox-input:not(:placeholder-shown) + label {
-    top: 13px;
-    left: 10px;
-    font-size: 0.8rem;
+    animation: input-focus 0.24s forwards;
+}
+
+.container-input {
+    display: flex;             
+    flex-direction: column;  
+    align-items: start;      
+    height: 100%;            
+    margin: 0;                
+    padding: 10px 0 10px 0;               
+}
+
+.radio-sms-input,
+.radio-call-input {
+    display: flex;
+    justify-content: start;
+    width: 18px;
+    height: 18px;
+}
+
+.validation-input-sms,
+.validation-input-call {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #888; 
+    padding: 0 0 10px 0;
+}
+
+.radio-sms-label, .radio-call-label {
+    padding: 0 0 0 10px;
+    font-size: 17px;
+}
+
+.validation-radio-box-content-0, .validation-radio-box-content-1 {
+    display: flex;  
+    margin: 10px 0 10px 0;               
+    padding: 0;            
+    width: 100%;              
+    text-align: left;
+    font-family: 'SF Pro';
+}
+
+.validation-radio-box-content-0 {
+    font-size: 1rem;
+    color: #666;
+}
+
+.validation-radio-box-content-1 {
+    font-size: 1.2rem;
+}
+
+.privacy-wrapper {
+    height: 141.3px;
+}
+
+.privacy-image-logo {
+    width: 35px;
+    margin: 0 0 5px 0;
+}
+
+.privacy-wrapper a {
+    color: #06c;
+    text-decoration: none;
+    line-height: 1.5;
+    display: inline-flex;
+    align-items: center;
+}
+
+.privacy-wrapper a:hover {
+    text-decoration: underline;
+}
+
+.privacy-text-span {
+    color: #6e6e73;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    line-height: 1.3333733333;
+    font-family: 'SF Pro Display Medium';
+    height: 94px;
 }
 
 .submit {
@@ -186,6 +337,9 @@ label {
     justify-content: center;
     width: 100%;
     max-width: 500px;
+    height: 44px;
+    padding: 20px 0 0 0;
+    margin: 0 0 50px 0;
 }
 
 .submit-button-label {
@@ -194,10 +348,11 @@ label {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1.12rem;
+    font-size: 17px;
     color: #fff;
     pointer-events: none; 
     z-index: 2;
+    padding: 20px 0 0 0;    
 }
 
 .submit-button input[type="submit"] {
@@ -208,10 +363,11 @@ label {
     color: #fff;
     background-color: #0071e3;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     cursor: pointer;
     position: relative;
     z-index: 1;
+    height: 44px;
 }
 
 .submit-button input[type="submit"]:hover {
@@ -264,13 +420,35 @@ label {
 
 @keyframes filllogo {
     from {
-        fill: #242426;
+        fill: #363638;
     }
 
     to {
         fill: black;
     }
 }
+
+@keyframes input-focus {
+    to {
+        top: 13px;
+        left: 10px;
+        font-size: 0.8rem;
+    }
+    
+}
+
+@keyframes nofilllogo {
+
+    from {
+        fill: black;
+    }
+
+    to {
+        fill: #363638;
+    }
+    
+}
+
 @media screen and (max-width: 600px) {
     h1 {
         animation: fontchangeh1 .5s forwards;
