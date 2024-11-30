@@ -42,7 +42,7 @@
     font-family: 'SF Pro Display Regular';
     font-size: 40px;
     font-weight: 600;
-    letter-spacing: 0;
+    letter-spacing: .03em;
     line-height: 1.1;
     max-width:980px;
     width: 100%;
@@ -102,6 +102,7 @@ form {
 .reg > div{
     margin-top: 2%;
     font-family: 'SF Pro';
+    color: #565657;
 }
 
 .reg a {
