@@ -478,15 +478,6 @@ label {
     }
 }
 
-@keyframes input-focus {
-    to {
-        top: 13px;
-        left: 10px;
-        font-size: 0.8rem;
-    }
-    
-}
-
 @keyframes nofilllogo {
 
     from {
@@ -498,6 +489,17 @@ label {
     }
     
 }
+
+@keyframes input-focus {
+    to {
+        top: 13px;
+        left: 10px;
+        font-size: 0.8rem;
+    }
+    
+}
+
+
 
 @media screen and (max-width: 1400px) {
     h1 {

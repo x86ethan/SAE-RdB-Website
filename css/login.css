@@ -237,9 +237,27 @@ input::placeholder {
 
 }
 
+@keyframes filllogo {
+    from {
+        fill: #363638;
+    }
 
+    to {
+        fill: black;
+    }
+}
 
+@keyframes nofilllogo {
 
+    from {
+        fill: black;
+    }
+
+    to {
+        fill: #363638;
+    }
+    
+}
 
 
 
