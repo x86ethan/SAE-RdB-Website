@@ -499,7 +499,16 @@ label {
     
 }
 
+@keyframes submit-phone {
 
+    from {
+        padding: 0 0 0 0;
+    }
+
+    to {
+        padding: 0 0 80px 0;
+    }
+}
 
 @media screen and (max-width: 1400px) {
     h1 {
@@ -510,8 +519,12 @@ label {
         animation: fontchangetext .5s forwards;
     }
 
-    .name-wrapper, .id-wrapper, .email-wrapper, .password-wrapper, .submit-button {
+    .name-wrapper, .id-wrapper, .email-wrapper, .password-wrapper, .submit-button, .confirm-password-wrapper, .validation-wrapper, .email-text  {
         animation: widthchange .5s forwards;
+    }
+
+    .privacy-wrapper {
+        animation: submit-phone .5s forwards, widthchange .5s forwards;
     }
 
     .submit-button input[type="submit"] {
@@ -519,19 +532,27 @@ label {
     }
 
     .nav-top, .nav-subtop {
-        width: 100%;  /* Prendre toute la largeur */
-        margin: 0;    /* Réinitialiser les marges */
-        padding: 10px; /* Ajouter un peu de padding */
+        width: 100%; 
+        margin: 0;    
+        padding: 10px;
     }
 
     .nav-subtop-content {
-        font-size: 18px;  /* Réduire la taille du texte pour les petits écrans */
+        font-size: 18px;
         line-height: 1.4;
     }
 
     .nav-subtop-content-right {
-        font-size: 12px;  /* Réduire la taille du texte pour les petits écrans */
+        font-size: 12px; 
     }
+}
+
+@media screen and (min-width: 1400px) {
+
+    .name-wrapper, .id-wrapper, .email-wrapper, .password-wrapper, .submit-button, .confirm-password-wrapper, .validation-wrapper, .email-text  {
+        animation: widthchangeback .5s forwards;
+    }    
+
 }
 
 @media screen and (max-width: 1907px){
