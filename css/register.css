@@ -18,7 +18,7 @@
 
 .container {
     width: 100%;
-    max-width: 1994px;
+    max-width: 9999px;
     height: 100%;
     overflow: auto;
 }
@@ -26,7 +26,7 @@
 .wrapper-subnav {
     display: flex;
     width: 100%;
-    max-width: 1994px;
+    max-width: 9999px;
     align-items: flex-start;
 }
 
@@ -547,10 +547,10 @@ label {
     }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1401px) {
 
     .name-wrapper, .id-wrapper, .email-wrapper, .password-wrapper, .submit-button, .confirm-password-wrapper, .validation-wrapper, .email-text  {
-        animation: widthchangeback .5s forwards;
+        animation: widthchangeback 1.5s forwards;
     }    
 
 }
