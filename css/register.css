@@ -36,13 +36,13 @@
     height: 1px;
     width: 980px;
     background-color: #d2d2d2;
-    margin: -4px auto 0;
+    margin:-4px 24.2% 0 24.2%;
 }
 
 .nav-top {
     width: 980px;
     height: 48px;
-    margin: 0 436.5px 0 436.5px;
+    margin: 0 23.0105% 0 23.0105%;
     padding: 0 22px 0 10px;
 }
 
@@ -50,7 +50,7 @@
     height: 52px;
     max-width: 980px;
     width: 100%;
-    margin: auto 436.5px auto 436.5px;
+    margin: 0 23.0105% 0 23.0105%;
     padding: 0 22px 0 22px;
 }
 
@@ -65,7 +65,6 @@
     display: inline-block;
     white-space: nowrap;
     margin: -4px 0 0 0;
-    align-items: flex-start;
     color: #242426;
 }
 
@@ -281,7 +280,7 @@ label {
 .form-passwordbox-input:not(:placeholder-shown) + label,
 .form-confirm-passwordbox-input:focus +label,
 .form-confirm-passwordbox-input:not(:placeholder-shown) + label{
-    animation: input-focus 0.24s forwards;
+    animation: input-focus 0.24s forwards ease-in-out;
 }
 
 .email-text {
@@ -496,7 +495,13 @@ label {
         left: 10px;
         font-size: 0.8rem;
     }
-    
+}
+
+@keyframes input-notfocus {
+    to {
+        top: 25px;
+        left: 10px;
+    }
 }
 
 @keyframes submit-phone {
@@ -510,9 +515,24 @@ label {
     }
 }
 
+@keyframes margininfo {
+    from {
+        margin: 0 0 0 0;
+    }
+
+    to {
+        margin: 0 50px 0 50px;
+    }
+}
+
 @media screen and (max-width: 1400px) {
+
     h1 {
         animation: fontchangeh1 .5s forwards;
+    }
+
+    .informations {
+        animation: margininfo .5s forwards; 
     }
 
     .subheader-centered {
@@ -531,28 +551,44 @@ label {
         padding: 20px;
     }
 
-    .nav-top, .nav-subtop {
-        width: 100%; 
-        margin: 0;    
-        padding: 10px;
+    .nav-subtop,.nav-top, .nav-subtop-background::after {
+        margin: auto;
+    }
+
+    .nav-subtop {
+        padding: 0 0 0 17px;
+    }
+
+    .logo-top {
+        position: relative;
+        height: 48px;
+        width: 17px;
+        padding: 0;
+        z-index: 100;
+        fill: #363638;
+        padding: 0 6px 0 6px;
     }
 
     .nav-subtop-content {
-        font-size: 18px;
-        line-height: 1.4;
-    }
-
-    .nav-subtop-content-right {
-        font-size: 12px; 
+        font-size: 1.11em;
+        letter-spacing: .075em;
+        padding: 3px 0 0 0;
     }
 }
 
-@media screen and (min-width: 1401px) {
+@media screen and (max-width: 1020px) {
 
+    .nav-subtop-background::after {
+        width: 100%;
+        margin: -4px auto 0 auto;
+    }
+    
+}
+
+@media screen and (min-width: 1401px) {
     .name-wrapper, .id-wrapper, .email-wrapper, .password-wrapper, .submit-button, .confirm-password-wrapper, .validation-wrapper, .email-text  {
         animation: widthchangeback 1.5s forwards;
-    }    
-
+    }
 }
 
 @media screen and (max-width: 1907px){
