@@ -61,19 +61,19 @@ body > main{
     flex-direction: column;
 }
 
-.sous-menu div:first-of-type{
+.entete{
     display: flex;
     flex-direction: row;
-    flex-wrap:wrap;
-    gap: 10px;
-    
 }
+
+
 .sous-menu{
     margin: 0 0 0 100px;
 }
 
+
 .bloc{
-    text-align: left;
+    padding: 1vh;
     border-style: solid;
     border-width: 0.1em;
     border-color: grey;
@@ -82,6 +82,7 @@ body > main{
     border-radius: 10px;
     
 }
+
 
 @media screen and (max-width: 800px) {
 

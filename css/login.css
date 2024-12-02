@@ -1,11 +1,11 @@
 .logo-top {
     position: relative;
     height: 44px;
-    width:14px;
+    width: 14.5px;
     padding: 0;
     z-index: 100;
     fill: #363638;
-    padding: 0px 12px 0 10px;
+    padding: 0px 12px 0 12px;
 }
 
 .logo-top:hover {
@@ -15,18 +15,18 @@
 .logo-top:not(:hover){
     animation: nofilllogo .32s forwards;
 }
-
 .wrapper-subnav {
     display: flex;
     width: 100%;
     max-width: 1994px;
 }
 
+
 .nav-top {
     width: 980px;
     height: 48px;
     justify-content: center;
-    margin: 0 436.5px 0 436.5px;
+    
     padding: 0 22px 0 10px;
 }
 
@@ -34,7 +34,7 @@
     height: 52px;
     max-width: 980px;
     width: 100%;
-    margin: auto 438.5px auto 438.5px;
+    margin: auto;
     padding: 0 22px 0 22px;
 }
 
