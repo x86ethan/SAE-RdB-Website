@@ -5,7 +5,7 @@
     padding: 0;
     z-index: 100;
     fill: #363638;
-    padding: 0px 12px 0 12px;
+    padding: 0px 6px 0 6px;
 }
 
 .logo-top:hover {
@@ -37,13 +37,13 @@
     height: 1px;
     width: 980px;
     background-color: #d2d2d2;
-    margin:-4px 24.2% 0 24.2%;
+    margin:-4px auto 0 auto
 }
 
 .nav-top {
     width: 980px;
     height: 48px;
-    margin: 0 23.0105% 0 23.0105%;
+    margin: 0 auto 0 auto;
     padding: 0 22px 0 10px;
 }
 
@@ -51,7 +51,7 @@
     height: 52px;
     max-width: 980px;
     width: 100%;
-    margin: 0 23.0105% 0 23.0105%;
+    margin: 0 auto 0 auto;
     padding: 0 22px 0 22px;
 }
 
@@ -67,13 +67,6 @@
     white-space: nowrap;
     margin: -4px 0 0 0;
     color: #242426;
-}
-
-.subheader-justify-left {
-    font-family: 'SF Pro';
-    vertical-align: middle;
-    right: 6px;
-    top: 1px;
 }
 
 .nav-subtop-content-right {
@@ -455,13 +448,13 @@ label {
         width: 70%;
     }
     to {
-        width: 40%;
+        width: 35%;
     }
 }
 
 @keyframes widthchangeback2 {
     from {
-        width: 40%;
+        width: 35%;
     }
     to {
         width: 70%;
@@ -546,6 +539,18 @@ label {
     }
 }
 
+@keyframes fontsizechange {
+    from {
+        font-size: 21px
+    }
+
+    to {
+        font-size: 1.11em;
+        letter-spacing: .075em;
+        padding: 4px 0 0 0;
+    }
+}
+
 @media screen and (max-width: 1400px) {
 
     h1 {
@@ -591,21 +596,18 @@ label {
         padding: 0 6px 0 6px;
     }
 
-    .nav-subtop-content {
-        font-size: 1.11em;
-        letter-spacing: .075em;
-        padding: 3px 0 0 0;
-    }
-
     .informations {
         font-size: 12px;
+    }
+
+    .nav-subtop-background::after {
+        margin: -4px auto 0 auto;
     }
 }
 
 @media screen and (max-width: 1020px) {
 
     .nav-subtop-background::after {
-        width: 100%;
         margin: -4px auto 0 auto;
     }
 }
@@ -614,6 +616,25 @@ label {
     .nav-subtop-content-right {
         display: none;
     }
+}
+
+@media screen  and (max-width: 800px ){
+    .nav-subtop-content {
+        animation: fontsizechange .24s forwards;
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .logo-top {
+        position: relative;
+        height: 44px;
+        width: 14.5px;
+        padding: 0;
+        z-index: 100;
+        fill: #363638;
+        padding: 0px 6px 0 6px;
+    }
+    
 }
 
 @media  screen and (max-width: 600px) {
