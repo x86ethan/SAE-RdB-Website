@@ -539,10 +539,6 @@ label {
         animation: fontchangetext .5s forwards;
     }
 
-    .name-wrapper, .id-wrapper, .email-wrapper, .password-wrapper, .submit-button, .confirm-password-wrapper, .validation-wrapper, .email-text  {
-        animation: widthchange .5s forwards;
-    }
-
     .privacy-wrapper {
         animation: submit-phone .5s forwards, widthchange .5s forwards;
     }
@@ -574,6 +570,10 @@ label {
         letter-spacing: .075em;
         padding: 3px 0 0 0;
     }
+
+    .informations {
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 1020px) {
@@ -583,12 +583,6 @@ label {
         margin: -4px auto 0 auto;
     }
     
-}
-
-@media screen and (min-width: 1401px) {
-    .name-wrapper, .id-wrapper, .email-wrapper, .password-wrapper, .submit-button, .confirm-password-wrapper, .validation-wrapper, .email-text  {
-        animation: widthchangeback 1.5s forwards;
-    }
 }
 
 @media screen and (max-width: 1907px){
