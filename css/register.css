@@ -79,6 +79,7 @@
     line-height: 22px;
     color: #000;
     text-decoration: none;
+    transition: all .1s ease-in-out;
 }
 
 .nav-subtop-content-right:hover {
@@ -641,6 +642,13 @@ label {
     .container {
         width: 100%;
         max-width: 600px;
+    }
+
+    .privacy-text-span {
+        width: 100%;
+        max-width: 400px;
+        font-size: 11px;
+        letter-spacing: -.01em;
     }
 }
 
