@@ -642,6 +642,13 @@ label {
         width: 100%;
         max-width: 600px;
     }
+
+    .privacy-text-span {
+        width: 100%;
+        max-width: 400px;
+        font-size: 11px;
+        letter-spacing: -.01em;
+    }
 }
 
 /*
