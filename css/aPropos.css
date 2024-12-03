@@ -201,6 +201,15 @@ p {
     animation-delay: 1.5s;
 }
 
+.fade-in:nth-child(4) {
+    animation-delay: 2s;
+}
+
+.fade-in:nth-child(5) {
+   animation-delay: 2.5s;
+}
+
+
 .eco-image {
     width: 100%;
     max-width: 1100px;
