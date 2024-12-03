@@ -16,16 +16,6 @@
     animation: nofilllogo .32s forwards;
 }
 
-.container {
-    width: 100%; 
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
 .wrapper-subnav {
     display: flex;
     width: 100%;
@@ -92,8 +82,8 @@ body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    width: 100%;
     height: 100%;
-    overflow-y: hidden;
     overflow-x: hidden;
     overflow: hidden;
 }
@@ -102,6 +92,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    width: 100%;
 }
 
 main {
@@ -111,8 +102,6 @@ main {
     justify-content: flex-start;
     min-height: calc(100vh - 48px - 52px);
     text-align: center;
-    overflow-y: hidden;
-    flex-grow: 1;
 }
 
 h1 {
@@ -120,17 +109,26 @@ h1 {
     text-align: start;
     font-size: 2rem;
     letter-spacing: 0.025em;
-    margin: 50px 0 25px 0;
+    margin: 50px 0 35px 0;
 }
 
 .subheader-justify-left {
     font-family: 'SF Pro Text Regular';
-    width: 96%;
+    width: 100%;
+    text-align: left;
     font-size: 17px;
     line-height: 1.47059;
     font-weight: 400;
     letter-spacing: -.022em;
     padding: 0 0 14px 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .container2 {
@@ -144,7 +142,7 @@ h1 {
     border-right: 1px solid #d2d2d2;
     width: 677px;
     padding: 0 20px 0 0;
-    height: 275px
+    height: 276px;
 }
 
 .form {
@@ -244,7 +242,7 @@ label {
 }
 
 .submit-wrapper {
-    margin: 103px 0 0 0;
+    margin: 105px 0 0 0;
 }
 
 .submit {
@@ -257,7 +255,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
+    width: 125px;
     height: 36px;
     padding: 0;
     margin: 0 0 35px 0;
@@ -326,6 +324,28 @@ label {
     to {
         padding: 1.05882rem .94118rem 0;
     }
+}
+
+@keyframes filllogo {
+    from {
+        fill: #363638;
+    }
+
+    to {
+        fill: black;
+    }
+}
+
+@keyframes nofilllogo {
+
+    from {
+        fill: black;
+    }
+
+    to {
+        fill: #363638;
+    }
+    
 }
 
 @media screen and (max-width: 600px) {

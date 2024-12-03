@@ -1,16 +1,112 @@
 .logo-top {
     position: relative;
-    height: 48px;
-    width:17px;
-    height: auto;
+    height: 44px;
+    width: 14.5px;
+    padding: 0;
     z-index: 100;
-    fill: #1C1C1E;
-    margin-top: 1%;
-    left: 3%;
+    fill: #363638;
+    padding: 0px 6px 0 6px;
 }
 
 .logo-top:hover {
-    fill: black;
+    animation: filllogo .32s forwards;
+}
+
+.logo-top:not(:hover){
+    animation: nofilllogo .32s forwards;
+}
+
+.wrapper-subnav {
+    display: flex;
+    width: 100%;
+    max-width: 9999px;
+    align-items: flex-start;
+    margin: -5px 0 0 0;
+}
+
+.nav-subtop-background::after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 980px;
+    background-color: #d2d2d2;
+    margin: -4px auto 0 auto
+}
+
+.nav-top {
+    width: 980px;
+    height: 48px;
+    margin: 0 auto 0 auto;
+    padding: 0 22px 0 10px;
+}
+
+.nav-subtop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 52px;
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto 3px auto;
+    padding: 0 22px ;
+}
+
+.nav-subtop-content {
+    font-family: 'SF Pro Display Regular';
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 3.15rem;
+    color: #242426;
+    white-space: nowrap;
+}
+
+.nav-subtop-content-right {
+    text-decoration: none;
+    transition: all .1s ease-in-out;
+    margin: 1px 0 0 0;
+}
+
+.bouton-deconnexion {
+    width: 95px;
+    height: 24px;
+    border-radius: 12px;
+    font-size: 13px;
+    letter-spacing: .01em;
+    line-height: 1.3333733333;
+    font-family: 'SF Pro';
+    border: 0px;
+    background-color: #06c;
+    transition: all 0.24s ease-in-out;
+}
+
+.bouton-deconnexion:hover {
+    background-color: #007AFF ;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: calc(100vh - 48px - 52px);
+    text-align: center;
 }
 
 .Menu-compte > img{
@@ -34,31 +130,18 @@ button{
     content: '';
     display: block;
     height: 1px;
-    width: 90%;
+    width: 980px;
     background-color: #d2d2d2;
     margin: -2px auto 0;
 }
 
-body {
-    height: 100%;
-    width: 100%;
-    padding: 0; margin: 0;
-}
-
-body > main{
-    margin-top: 5%;
-    padding-left: 5% ;
-    padding-right: 5%;
-    display: flex;
-    flex-direction: row;
-}
-
 .Menu-compte{
     display: flex ;
+    flex-direction: column;
     margin: 0 0 0 0;
     max-width: 200px;
     width: 100%;
-    flex-direction: column;
+    text-align: start;
 }
 
 .entete{
@@ -66,21 +149,66 @@ body > main{
     flex-direction: row;
 }
 
+.container {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
 
-.sous-menu{
-    margin: 0 0 0 100px;
+.container2 {
+    width: 100%;
+    max-width: 980px;
+    background-color: #06c;
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0 0 0;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    max-width: 100%;
+    width: 25%;
+    overflow: hidden;
+}
+
+.container4{
+    max-width: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: #1C1C1E;
+    margin-left: 10%;
 }
 
 
+
+
 .bloc{
-    padding: 1vh;
+    /*padding: 1vh;
     border-style: solid;
     border-width: 0.1em;
     border-color: grey;
     width: 25vw;
     height: 10vh;
-    border-radius: 10px;
+    border-radius: 10px;*/
     
+
+    flex: 1 1 calc(27% - 20px); /* Ajuste la largeur des blocs à 25% moins l'espace entre les blocs */
+    min-width: 200px; /* Définit une largeur minimale pour éviter des tailles trop petites */
+    box-sizing: border-box; /* Inclut les bordures et marges dans la largeur */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
 }
 .bloc:hover{
     border-color: #06c;
@@ -95,6 +223,27 @@ a:hover{
     color: #06c;
 }
 
+@keyframes filllogo {
+    from {
+        fill: #363638;
+    }
+
+    to {
+        fill: black;
+    }
+}
+
+@keyframes nofilllogo {
+
+    from {
+        fill: black;
+    }
+
+    to {
+        fill: #363638;
+    }
+    
+}
 
 @media screen and (max-width: 800px) {
 
