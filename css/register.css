@@ -434,16 +434,34 @@ label {
         width: 100%;
     }
     to {
-        width: 60%;
+        width: 70%;
     }
 }
 
 @keyframes widthchangeback {
     from {
-        width: 60%;
+        width: 70%;
     }
     to {
         width: 100%;
+    }
+}
+
+@keyframes widthchange2 {
+    from {
+        width: 70%;
+    }
+    to {
+        width: 40%;
+    }
+}
+
+@keyframes widthchangeback2 {
+    from {
+        width: 40%;
+    }
+    to {
+        width: 70%;
     }
 }
 
