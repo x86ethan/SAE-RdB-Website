@@ -531,6 +531,11 @@ label {
         animation: fontchangeh1 .5s forwards;
     }
 
+    .container {
+        width: 100%;
+        max-width: 800px ;
+    }
+
     .informations {
         animation: margininfo .5s forwards; 
     }
@@ -582,7 +587,6 @@ label {
         width: 100%;
         margin: -4px auto 0 auto;
     }
-    
 }
 
 @media screen and (max-width: 1907px){
