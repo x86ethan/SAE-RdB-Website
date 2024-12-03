@@ -4,119 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iCloud Mail Clone</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background-color: #f1f1f1;
-            color: #333;
-        }
-
-        /* Header */
-        .header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px 20px;
-            background-color: #0071e3;
-            color: white;
-        }
-
-        .header h1 {
-            margin: 0;
-            font-size: 1.5rem;
-        }
-
-        .header .icons {
-            display: flex;
-            gap: 15px;
-        }
-
-        .header .icons span {
-            cursor: pointer;
-            font-size: 1.2rem;
-        }
-
-        /* Sidebar */
-        .sidebar {
-            width: 250px;
-            background-color: #fff;
-            border-right: 1px solid #ccc;
-            height: 100vh;
-            position: fixed;
-            top: 50px;
-            left: 0;
-            padding: 20px 10px;
-        }
-
-        .sidebar ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .sidebar ul li {
-            padding: 10px;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        .sidebar ul li:hover {
-            background-color: #f1f1f1;
-        }
-
-        /* Mail List */
-        .mail-container {
-            margin-left: 250px;
-            padding: 20px;
-            height: calc(100vh - 50px);
-            overflow-y: auto;
-        }
-
-        .mail-item {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: #fff;
-            margin-bottom: 10px;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            cursor: pointer;
-            transition: box-shadow 0.3s;
-        }
-
-        .mail-item:hover {
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-        }
-
-        .mail-item .subject {
-            font-weight: bold;
-        }
-
-        .mail-item .preview {
-            color: #666;
-            margin-top: 5px;
-        }
-
-        .mail-item .time {
-            color: #999;
-            font-size: 0.9rem;
-        }
-    </style>
+    <link href="/css/fauxWebMail.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
+    
     <div class="header">
         <h1>iCloud Mail</h1>
         <div class="icons">
-            <span>&#x2699;</span> <!-- Settings Icon -->
-            <span>&#x2709;</span> <!-- Compose Icon -->
+            <span>&#x2699;</span> 
+            <span>&#x2709;</span> 
         </div>
     </div>
 
-    <!-- Sidebar -->
     <div class="sidebar">
         <ul>
             <li>Inbox</li>
@@ -127,12 +26,12 @@
         </ul>
     </div>
 
-    <!-- Mail List -->
+    
     <div class="mail-container">
-        <div class="mail-item" onclick="location.href='test2.html'">
+        <div class="mail-item" onclick="location.href='fauxMail.html'">
             <div>
                 <div class="subject">Récupération du mot de passe</div>
-                <div class="preview">Thank you for signing up to iCloud. Here are some tips...</div>
+                <div class="preview">Nous avons reçu une demande de réinitialisation pour votre...</div>
             </div>
             <div class="time">10:30 AM</div>
         </div>
