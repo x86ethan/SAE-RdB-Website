@@ -143,6 +143,23 @@ button{
     width: 100%;
     text-align: start;
 }
+.Menu-compte a{
+    font-size: large;
+    margin-bottom: 4% ;
+}
+
+.Menu-compte div div{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    font-family: 'SF Pro';
+    font-size: 24px;
+}
+
+.Menu-compte div{
+    margin-bottom: 20% ;
+}
+
+
 
 .entete{
     display: flex;
@@ -164,6 +181,7 @@ button{
     display: flex;
     flex-direction: row;
     margin: 10px 0 0 0;
+    padding-top: 2.5%;
 }
 
 .container3 {
@@ -171,43 +189,41 @@ button{
     flex-direction: column;
     background-color: aqua;
     max-width: 100%;
-    width: 25%;
+    width: 20%;
     overflow: hidden;
 }
 
 .container4{
     max-width: 100%;
-    width: 70%;
+    width: 75%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 20px;
     justify-content: space-between;
     overflow: hidden;
     background-color: #1C1C1E;
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 
 
 
 .bloc{
-    /*padding: 1vh;
-    border-style: solid;
-    border-width: 0.1em;
-    border-color: grey;
-    width: 25vw;
-    height: 10vh;
-    border-radius: 10px;*/
-    
 
-    flex: 1 1 calc(27% - 20px); /* Ajuste la largeur des blocs à 25% moins l'espace entre les blocs */
-    min-width: 200px; /* Définit une largeur minimale pour éviter des tailles trop petites */
-    box-sizing: border-box; /* Inclut les bordures et marges dans la largeur */
+    flex: 1 1 calc(27% - 20px); 
+    min-width: 100px; 
+    max-width: 350px;
+    width: auto;
+
+    min-height: 75px;
+    max-height: 150px;
+    height: auto;
+
+    box-sizing: border-box;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
 }
 .bloc:hover{

@@ -4,18 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Transports</title>
-    
-    
     <script src="scripts/burger-menu.js"></script>
     <script src="scripts/tabbar.js"></script>
-
-    <!-- Shortcut Icons -->
     <link rel="shortcut icon" type="image/x-icon" href="/icons/favicon.ico">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/map.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
@@ -23,9 +17,6 @@
         <div class="bar"></div>
         <div class="bar"></div>
     </div> 
-
-    
-
     <nav id="navtop">
         <menu>
             <div id="menu">
@@ -35,9 +26,7 @@
             </div>
         </menu>
     </nav>
-
     <div id="mainmenu">
-
         <nav id="nav-responsive">
             <div class="nav-container flex-reverse">
                 <a href="login.html" class="nav">􀓣 Connexion</a>
@@ -49,23 +38,18 @@
                 <a href="legals.html" class="nav nav-dimmed">Mentions Légales</a>
             </div>
         </nav>
-        
         <h1 id="mainlogo">
             <img src="img/apple-logo.png" alt="Apple" id="applelogo">
             Transports
         </h1>
-
         <textarea onkeypress="return event.keyCode !== 13" name="" rows="1" id="searchbar" placeholder="􀊫 Rechercher une adresse" inputmode="text"></textarea>
-
         <div id="time" class="tabbar">
             <div class="tab tab-active" onclick=changeTab()>Ponctuel</div>
             <div class="tab" onclick=changeTab()>Régulier</div>
         </div>
-    
         <div id="tab-content-once" class="tabbar-content shown">
             <div class="choice-wrapper">Arriver le <input type="datetime-local" class="date-entry" name="arrive-time" value="2017-06-01T08:30"></div>
         </div>
-
         <div id="tab-content-regular" class="tabbar-content hidden">
             <div class="choice-wrapper">
                 Jours
@@ -86,19 +70,13 @@
                     <label class="day-checkbox-label" for="checkbox-day-sunday">D</label>
                 </div>
             </div>
-
             <br>
             <div class="choice-wrapper">Arriver à <input type="time" name="arrive-time" value="08:30" class="date-entry"></div>
         </div>
     </div>
-
-    
     <iframe
         frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="map"
         src="https://www.openstreetmap.org/export/embed.html?bbox=2.292292833328247%2C48.85748697959105%2C2.2945311069488525%2C48.85985350891972&layer=mapni">
     </iframe>
-
-
-    
 </body>
 </html>
