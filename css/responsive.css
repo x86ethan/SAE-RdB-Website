@@ -1,0 +1,28 @@
+@media screen and (max-width: 600px) {
+    .burger-icon {
+        display: flex;
+    }
+
+    #nav-responsive {
+        display: none;
+    }
+
+    #mainmenu {
+        top: initial;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    #mainlogo {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .burger-icon {
+        display: none;
+    }
+
+    #nav-responsive {
+        display: flex;
+    }
+}

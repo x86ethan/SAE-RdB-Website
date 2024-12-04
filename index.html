@@ -4,30 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Transports</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/icons/favicon.ico">
-    <link rel="stylesheet" href="css/index.css">
+    
+    
     <script src="scripts/burger-menu.js"></script>
     <script src="scripts/tabbar.js"></script>
-    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Shortcut Icons -->
+    <link rel="shortcut icon" type="image/x-icon" href="/icons/favicon.ico">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
     <div id="burger-menu" class="burger-icon" onclick="toggleNavMenu()">
         <div class="bar"></div>
         <div class="bar"></div>
     </div> 
+
+    
+
     <nav id="navtop">
         <menu>
             <div id="menu">
                 <div style="--i: 1"><a href="login.html">Login</a></div>
-                <div style="--i: 2"><a href="sitemap.html" class="nav">Plan du site</a></div>
-                <div style="--i: 3"><a href="aPropros.html" class="nav">A propos</a></div>
-                <div style="--i: 4"><a href="legals.html" class="nav">Mentions Legales</a></div>
+                <div style="--i: 2"><a href="Href2">Menu 2</a></div>
+                <div style="--i: 3"><a href="legals.html">Mentions Legales</a></div>
             </div>
         </menu>
     </nav>
 
     <div id="mainmenu">
+
+        <nav id="nav-responsive">
+            <a href="" class="nav">Connexion</a>
+            <a href="" class="nav">Menu 2</a>
+        </nav>
+        
         <h1 id="mainlogo">
             <img src="img/apple-logo.png" alt="Apple" id="applelogo">
             Transports
@@ -64,13 +79,19 @@
                     <label class="day-checkbox-label" for="checkbox-day-sunday">D</label>
                 </div>
             </div>
+
             <br>
             <div class="choice-wrapper">Arriver à <input type="time" name="arrive-time" value="08:30" class="date-entry"></div>
         </div>
     </div>
-     <iframe
+
+    
+    <iframe
         frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="map"
         src="https://www.openstreetmap.org/export/embed.html?bbox=2.292292833328247%2C48.85748697959105%2C2.2945311069488525%2C48.85985350891972&layer=mapni">
     </iframe>
+
+
+    
 </body>
 </html>
