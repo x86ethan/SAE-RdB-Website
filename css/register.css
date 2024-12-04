@@ -252,6 +252,7 @@ main > div * {
     outline: none;
     background: #fff;
     box-sizing: border-box; 
+    transition: border-color 0.2s ease-in-out;
 }
 
 .form-textbox-input:focus, .form-emailbox-input:focus, .form-passwordbox-input:focus, .form-confirm-passwordbox-input:focus {
@@ -277,12 +278,16 @@ label {
 .form-passwordbox-input:not(:placeholder-shown) + label,
 .form-confirm-passwordbox-input:focus +label,
 .form-confirm-passwordbox-input:not(:placeholder-shown) + label{
-    animation: input-focus 0.24s forwards ease-in-out;
+    /* animation: input-focus 0.24s forwards ease-in-out; */
+    top: 13px;
+    left: 10px;
+    font-size: 0.8rem;
+    
 }
 
 .email-text {
     display: flex;
-    font-family: 'SF Pro Text Medium';
+    font-family: 'SF Pro';
     font-size: 14px;
     color: #545456;
     margin: 15px 0 0 0;
