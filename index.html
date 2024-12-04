@@ -3,102 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apple Transports</title>
-    
-    
-    <script src="scripts/burger-menu.js"></script>
-    <script src="scripts/tabbar.js"></script>
-
-    <!-- Shortcut Icons -->
-    <link rel="shortcut icon" type="image/x-icon" href="/icons/favicon.ico">
-
-    <!-- CSS -->
+    <title>Accueil | Apple Transports</title>
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <div id="burger-menu" class="burger-icon" onclick="toggleNavMenu()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div> 
-
     
-
-    <nav id="navtop">
-        <menu>
-            <div id="menu">
-                <div style="--i: 1"><a href="login.html">Login</a></div>
-                <div style="--i: 2"><a href="Href2">Menu 2</a></div>
-                <div style="--i: 3"><a href="legals.html">Mentions Legales</a></div>
+    <header>
+        <div class="wrapper-nav">
+            <nav class="nav-top">
+                <a href="index.html"><svg class="logo-top" height="48" viewBox="0 0 17 48" width="17" xmlns="http://www.w3.org/2000/svg"><path d="m15.5752 19.0792a4.2055 4.2055 0 0 0 -2.01 3.5376 4.0931 4.0931 0 0 0 2.4908 3.7542 9.7779 9.7779 0 0 1 -1.2755 2.6351c-.7941 1.1431-1.6244 2.2862-2.8878 2.2862s-1.5883-.734-3.0443-.734c-1.42 0-1.9252.7581-3.08.7581s-1.9611-1.0589-2.8876-2.3584a11.3987 11.3987 0 0 1 -1.9373-6.1487c0-3.61 2.3464-5.523 4.6566-5.523 1.2274 0 2.25.8062 3.02.8062.734 0 1.8771-.8543 3.2729-.8543a4.3778 4.3778 0 0 1 3.6822 1.841zm-6.8586-2.0456a1.3865 1.3865 0 0 1 -.2527-.024 1.6557 1.6557 0 0 1 -.0361-.337 4.0341 4.0341 0 0 1 1.0228-2.5148 4.1571 4.1571 0 0 1 2.7314-1.4078 1.7815 1.7815 0 0 1 .0361.373 4.1487 4.1487 0 0 1 -.9867 2.587 3.6039 3.6039 0 0 1 -2.5148 1.3236z"></path></svg></a>
+            </nav>
+            <div class="wrapper-subnav">
+                <nav class="nav-subtop">
+                    <div class="nav-subtop-content">Compte Apple</div>
+                    <div class="nav-subtop-content-right"><a href="login.html" class="nav-subtop-content-right">Connectez-vous</a></div>
+                </nav>
             </div>
-        </menu>
-    </nav>
-
-    <div id="mainmenu">
-
-        <nav id="nav-responsive">
-            <div class="nav-container flex-reverse">
-                <a href="login.html" class="nav">Connexion</a>
-                <a href="" class="nav">Menu 2</a>
-            </div>
-            <div class="separator-horiz"></div>
-            <div class="nav-container">
-                <a href="about.html" class="nav nav-dimmed">À Propos</a>
-                <a href="legals.html" class="nav nav-dimmed">Mentions Légales</a>
-            </div>
-        </nav>
-        
-        <h1 id="mainlogo">
-            <img src="img/apple-logo.png" alt="Apple" id="applelogo">
-            Transports
-        </h1>
-
-        <textarea onkeypress="return event.keyCode !== 13" name="" rows="1" id="searchbar" placeholder="􀊫 Rechercher une adresse" inputmode="text"></textarea>
-
-        <div id="time" class="tabbar">
-            <div class="tab tab-active" onclick=changeTab()>Ponctuel</div>
-            <div class="tab" onclick=changeTab()>Régulier</div>
+            <div class="nav-subtop-background"></div>
         </div>
     
-        <div id="tab-content-once" class="tabbar-content shown">
-            <div class="choice-wrapper">Arriver le <input type="datetime-local" class="date-entry" name="arrive-time" value="2017-06-01T08:30"></div>
-        </div>
+    </header>
 
-        <div id="tab-content-regular" class="tabbar-content hidden">
-            <div class="choice-wrapper">
-                Jours
-                <div style="display: flex; flex-direction: row; gap: 5px;">
-                    <input class="day-checkbox" type="checkbox" name="day-monday" id="checkbox-day-monday">
-                    <label class="day-checkbox-label" for="checkbox-day-monday">L</label>
-                    <input class="day-checkbox" type="checkbox" name="day-tuesday" id="checkbox-day-tuesday">
-                    <label class="day-checkbox-label" for="checkbox-day-tuesday">M</label>
-                    <input class="day-checkbox" type="checkbox" name="day-wednesday" id="checkbox-day-wednesday">
-                    <label class="day-checkbox-label" for="checkbox-day-wednesday">M</label>
-                    <input class="day-checkbox" type="checkbox" name="day-thursday" id="checkbox-day-thursday">
-                    <label class="day-checkbox-label" for="checkbox-day-thursday">J</label>
-                    <input class="day-checkbox" type="checkbox" name="day-friday" id="checkbox-day-friday">
-                    <label class="day-checkbox-label" for="checkbox-day-friday">V</label>
-                    <input class="day-checkbox" type="checkbox" name="day-saturday" id="checkbox-day-saturday">
-                    <label class="day-checkbox-label" for="checkbox-day-saturday">S</label>
-                    <input class="day-checkbox" type="checkbox" name="day-sunday" id="checkbox-day-sunday">
-                    <label class="day-checkbox-label" for="checkbox-day-sunday">D</label>
-                </div>
-            </div>
+    <main>
 
-            <br>
-            <div class="choice-wrapper">Arriver à <input type="time" name="arrive-time" value="08:30" class="date-entry"></div>
-        </div>
-    </div>
+    </main>
 
-    
-    <iframe
-        frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="map"
-        src="https://www.openstreetmap.org/export/embed.html?bbox=2.292292833328247%2C48.85748697959105%2C2.2945311069488525%2C48.85985350891972&layer=mapni">
-    </iframe>
-
-
-    
 </body>
 </html>

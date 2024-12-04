@@ -91,3 +91,91 @@ body, html {
         margin: 0 20px 0 20px;
     }
 }
+
+.logo-top {
+    position: relative;
+    height: 44px;
+    width: 14.5px;
+    padding: 0;
+    z-index: 100;
+    fill: #363638;
+    padding: 0px 6px 0 6px;
+}
+
+.logo-top:hover {
+    animation: filllogo .32s forwards;
+}
+
+.logo-top:not(:hover){
+    animation: nofilllogo .32s forwards;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.wrapper-subnav {
+    display: flex;
+    width: 100%;
+    max-width: 9999px;
+    align-items: flex-start;
+}
+
+.nav-subtop-background::after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 980px;
+    background-color: #d2d2d2;
+    margin:-4px auto 0 auto
+}
+
+.nav-top {
+    width: 980px;
+    height: 48px;
+    margin: 0 auto 0 auto;
+    padding: 0 22px 0 10px;
+}
+
+.nav-subtop {
+    height: 52px;
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding: 0 22px 0 22px;
+}
+
+.nav-subtop-content {
+    font-family: 'SF Pro Display Regular';
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 3.15rem;
+    max-width:max-content;
+    letter-spacing: 0.053rem;
+    width: 100%;
+    display: inline-block;
+    white-space: nowrap;
+    margin: -4px 0 0 0;
+    color: #242426;
+}
+
+.nav-subtop-content-right {
+    display: inline-block; 
+    white-space: nowrap;
+    margin: -4px 0 0 370px;
+    padding: 0 0 5px 0;
+    font-family: 'SF Pro';
+    font-size: 14px;
+    line-height: 22px;
+    color: #000;
+    text-decoration: none;
+    transition: all .1s ease-in-out;
+}
+
+.nav-subtop-content-right:hover {
+    color: #06c;
+}
