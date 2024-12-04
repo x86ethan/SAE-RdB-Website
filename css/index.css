@@ -35,11 +35,14 @@
 
 .nav-container {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 2px;
+}
 
+.flex-reverse {
+    flex-direction: column-reverse;
 }
 
 .nav {
@@ -54,6 +57,7 @@
     position: relative;
 
     transition: background-color 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out;
 }
 
 .nav::after {
@@ -61,7 +65,7 @@
     content: "􀰾";
 
     position: absolute;
-    right: -10px;
+    right: -20px;
     top: 0;
     padding: 10px;
     border-radius: 0 5px 5px 0;
@@ -80,13 +84,28 @@
 
 .nav:hover::after {
     opacity: 1;
-    transform: translateX(20px);
+    transform: translateX(10px);
     background-color: #F1F1F1;
     color:#06c;
 }
 
 .nav-dimmed {
     color: #8E8E8E;
+}
+
+.nav-dimmed:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.nav-dimmed::after {
+    color: #8E8E8E;
+}
+
+.nav-dimmed:hover::after {
+    background-color: transparent;
+    color: black;
+    transform: translateX(5px);
 }
 
 #map {
@@ -144,7 +163,7 @@
     cursor: pointer;
     z-index: 20;
     position: absolute;
-    top: 10px;
+    top: 30px;
     right: 45px;
     padding: 0 0px 10px 10px;
 }
@@ -218,13 +237,15 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
+    gap: 2px;
     padding: 0;
     margin: 0;
+    font-size: 36px;
+    letter-spacing: .01em;
 }
 
 #applelogo {
-    height: 36px;
+    height: 28px;
 }
 
 .tabbar {
