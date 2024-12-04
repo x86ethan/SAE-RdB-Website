@@ -117,7 +117,7 @@ form {
 
 form .input-field {
     position: relative;
-    width: 100%;
+    width: fit-content;
     height: 40px;
     margin: 7px;
 }
@@ -173,7 +173,7 @@ input::placeholder {
 
 .input-field button {
     position: absolute; /* Positionnement indépendant de l'écoulement normal */
-    right: 10px; /* Distance de la bordure droite de l'input */
+    right: 0px; /* Distance de la bordure droite de l'input */
     top: 70%; /* Centre verticalement */
     transform: translateY(-50%); /* Ajuste pour centrer parfaitement */
     height: calc(100% - 10px); /* Bouton un peu plus petit que l'input */
