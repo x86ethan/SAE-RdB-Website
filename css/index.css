@@ -22,7 +22,7 @@
     flex-direction: column-reverse;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 10px;
+    gap: 5px;
 
 }
 
@@ -31,6 +31,43 @@
     text-decoration: none;
     color: black;
     font-size: 1.2em;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    z-index: 3;
+
+    position: relative;
+
+    transition: background-color 0.15s ease-in-out;
+}
+
+.nav::after {
+    opacity: 0;
+    content: "􀰾";
+
+    position: absolute;
+    right: -10px;
+    top: 0;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+
+    z-index: 2;
+
+
+    transition: all 0.2s ease-in-out;
+}
+
+.nav:hover {
+    background-color: #F1F1F1;
+    color: #06c;
+    /* padding-right: 20px; */
+}
+
+.nav:hover::after {
+    opacity: 1;
+    transform: translateX(20px);
+    background-color: #F1F1F1;
+    color:#06c;
+
 
 }
 
