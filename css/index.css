@@ -111,18 +111,21 @@ header {
 }
 
 .bouton-commencer {
-    width: 95px;
-    height: 24px;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 10px 5px 10px;
     border-radius: 12px;
-    font-size: 13px;
+    font-size: 12px;
+    font-weight: 200;
     letter-spacing: .01em;
     line-height: 1.3333733333;
-    font-family: 'SF Pro Display Medium';
+    font-family: 'SF Pro Display Light';
     border: 0px;
     background-color: #06c;
     transition: all 0.24s ease-in-out;
     color: white;
     z-index: 1;
+
 }
 
 .bouton-commencer:hover {
@@ -149,4 +152,29 @@ header {
     width: 100%;
     height: auto;
     z-index: 0;
+}
+.video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+}
+
+header {
+    background-color: #161617CC;
+    backdrop-filter: blur(30px);
+}
+
+.nav-top > a > svg {
+    filter: invert(1) brightness(255);
+}
+
+.nav-subtop-content {
+    color: white;
+    font-weight: 900;
+}
+
+.nav-subtop-background {
+    display: none;
 }
