@@ -9,7 +9,12 @@
 
     #mainmenu {
         top: initial;
+        bottom: 0;
+        left: 0;
+        right: 0;
         border-radius: 10px 10px 0px 0px;
+        box-sizing: border-box;
+        width: 100vw;
     }
 
     #mainlogo {
