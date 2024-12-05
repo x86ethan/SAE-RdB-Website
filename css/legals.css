@@ -5,8 +5,9 @@
     height: auto;
     padding: 0;
     z-index: 100;
-    fill: #1C1C1E;
+    fill: #363638;
     left: 1%;
+    transition: all .24s ease;
 }
 
 .logo-top:hover {

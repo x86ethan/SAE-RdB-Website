@@ -214,10 +214,16 @@
 
 /* Styles pour les liens du menu */
 #menu > div > a {
-    color: white;
+    font-size: 21px;
+    color: #F2F2F7;
     text-decoration: none;
     display: block;
     padding-left: 50px;
+    transition: all .24s ease;
+}
+
+#menu > div > a:hover {
+    color: white
 }
 
 /* Animation de l'icône burger comme dans la version 1 */
@@ -317,6 +323,13 @@
 .day-checkbox:checked + .day-checkbox-label {
     background-color: rgb(0, 122, 255);
     color: #ffffff;
+}
+
+.ticket-reservation {
+    height: 20px;
+    width: 20px;
+    vertical-align: -3px;
+    padding: 0 7px 0 0;
 }
 
 @keyframes slideIn {

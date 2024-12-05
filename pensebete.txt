@@ -4,3 +4,15 @@
 Icône de compte : 􀉭
 La page "Devenir chauffeur" dans "drive.html"
 Mettre un texte "Mes réservations"
+
+
+            <div id="popup" class="popup" style="display: none;">
+                <div class="card">
+                    <h2>Procédure de réinitialisation du mot de passe bien prise en compte</h2>
+                    <p>Allez dans votre boîte mail afin de continuer la réinitialisation.</p>
+                    <div class="buttons">
+                        <button onclick="redirectHome()">Accueil</button>
+                        <button onclick="redirectEmail()">Boîte Mail</button>
+                    </div>
+                </div>
+            </div>
