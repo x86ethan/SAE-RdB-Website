@@ -16,3 +16,21 @@ Mettre un texte "Mes réservations"
                     </div>
                 </div>
             </div>
+   
+
+   
+    <label for="country">Choisissez un pays :</label>
+    <select id="country" name="country">
+        <option value="France">France</option>
+        <option value="Allemagne">Allemagne</option>
+        <option value="États-Unis">États-Unis</option>
+        <option value="Canada">Canada</option>
+        <option value="Royaume-Uni">Royaume-Uni</option>
+        <option value="Italie">Italie</option>
+        <option value="Espagne">Espagne</option>
+        <option value="Australie">Australie</option>
+        <option value="Japon">Japon</option>
+        <option value="Brésil">Brésil</option>
+        <option value="Inde">Inde</option>
+        <option value="Chine">Chine</option>
+    </select>

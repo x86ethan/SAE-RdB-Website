@@ -12,13 +12,14 @@
     text-decoration: none;
 }
 
-.informations a:hover {
-    text-decoration: underline;
-}
 .svg-icon-inline-chevron-right {
-    height: 9px;
+    height: 11px;
     margin: 0 0 -1px -1px;
     fill: #06c;
+}
+
+.informations a:hover {
+    text-decoration: underline;
 }
 
 main > h1 {
@@ -466,6 +467,8 @@ label {
         padding: 4px 0 0 0;
     }
 }
+
+/*wadawda*/
 
 @media screen and (max-width: 1400px) {
 
