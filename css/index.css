@@ -4,7 +4,7 @@
     width: 14.5px;
     padding: 0;
     z-index: 100;
-    fill: #D8D8DC;
+    fill: #E5E5EA;
 }
 
 .logo-top:hover {
@@ -122,10 +122,9 @@ header {
     font-family: 'SF Pro Display Light';
     border: 0px;
     background-color: #0071E3;
-    /* transition: all 0.2s ease-in-out; */
+    transition: all 0.24s ease-in-out;
     color: white;
     z-index: 0;
-
     cursor: pointer;
 
 }
@@ -163,15 +162,6 @@ header {
     backdrop-filter: blur(30px);
 }
 
-.nav-top > a > svg {
-    filter: invert(1) brightness(255);
-}
-
-.nav-subtop-content {
-    color: white;
-    font-weight: 900;
-}
-
 .nav-subtop-background {
     display: none;
 }
@@ -191,9 +181,114 @@ header {
     font-size: 13px;
     color: #AEAEB2;
     text-decoration: none;
+    transition: all 0.24s ease-in-out;
+}
+
+.a-navtop:hover{
+    color: #EBEBF0;
 }
 
 .search-navtop{
     margin: 7px 0 0 0;
     fill: #D8D8DC;
+}
+
+.search-navtop:hover{
+    fill: #EBEBF0;
+}
+
+#search-bar {
+    display: inline-block;
+    width: 0;
+    overflow: hidden;
+    margin: 0 -30px 0 0;
+    opacity: 0;
+    transition: width 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+#search-bar.active {
+    animation: searchbarin 0.3s forwards;
+    width: 200px;
+    border-radius: 10px;
+}
+
+#search-bar.inactive {
+    animation: searchbarout 0.3s forwards;
+}
+
+.hidden {
+    display: none;
+}
+
+.search-input {
+    width: 100%;
+    padding: 5px;
+    border: 0px;
+    border-radius: 10px;
+    color: white;
+    background-color: #161617CC;
+    backdrop-filter: blur(30px);
+}
+
+/*#search-bar {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    display: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}*/
+
+@keyframes filllogo {
+    from {
+        fill: #E5E5EA;
+    }
+
+    to {
+        fill: white;
+    }
+}
+
+@keyframes nofilllogo {
+
+    from {
+        fill: white;
+    }
+
+    to {
+        fill: #E5E5EA;
+    }
+}
+
+@keyframes searchbarin {
+    from {
+        width: 0;
+        opacity: 0;
+        margin: 0 -30px 0 0;
+    }
+
+    to {
+        width: 200px;
+        opacity: 1;
+        margin: 0 0 0 10px;
+    }
+}
+
+@keyframes searchbarout {
+    from {
+        width: 200px;
+        opacity: 1;
+        margin: 0 0 0 10px;
+    }
+    to {
+        width: 0;
+        opacity: 0;
+        margin: 0 -30px 0 0;
+    }
 }

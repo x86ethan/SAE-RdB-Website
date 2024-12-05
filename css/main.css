@@ -204,3 +204,16 @@ body, html {
         fill: #363638;
     }
 }
+
+@media screen and (max-width: 800px){
+
+    .logo-top {
+        position: relative;
+        height: 44px;
+        width: 19.5px;
+        padding: 0;
+        z-index: 100;
+        fill: #363638;
+        padding: 0px 6px 0 6px;
+    }
+}

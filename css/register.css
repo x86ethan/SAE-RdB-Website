@@ -539,6 +539,7 @@ label {
 }
 
 @media screen and (min-width: 820px) {
+    
     .logo-top {
         position: relative;
         height: 44px;
@@ -562,6 +563,16 @@ label {
         max-width: 400px;
         font-size: 11px;
         letter-spacing: -.01em;
+    }
+
+    .logo-top {
+        position: relative;
+        height: 44px;
+        width: 14.5px;
+        padding: 0;
+        z-index: 100;
+        fill: #363638;
+        padding: 0px 6px 0 6px;
     }
 }
 

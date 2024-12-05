@@ -216,6 +216,7 @@ button{
     gap: 20px; 
     justify-content: left;
     margin-left: 2%;
+    animation: container5 1.24s forwards;
 }
 
 .bloc{
@@ -238,7 +239,7 @@ button{
 }
 
 .bloc:hover{
-    border-color: #06c;
+    animation: colorhover 0.24s ease-in-out;
 }
 
 .bloc h3{
@@ -252,7 +253,7 @@ a{
 }
 
 a:hover{
-    color: #007AFF;
+    animation: colorhover 0.24s forwards;
 }
 
 @keyframes filllogo {
@@ -277,6 +278,30 @@ a:hover{
     
 }
 
+@keyframes container5 {
+
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes colorhover {
+    
+    from {
+        color: inherit;
+    }
+
+    to {
+        color: #06c;
+    }
+}
+
 @media screen and (max-width: 800px) {
 
     .Menu-compte{
@@ -288,3 +313,4 @@ a:hover{
     }
 
 }
+
