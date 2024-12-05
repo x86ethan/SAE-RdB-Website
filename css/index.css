@@ -5,7 +5,6 @@
     padding: 0;
     z-index: 100;
     fill: #D8D8DC;
-    padding: 0px 6px 0 7px;
 }
 
 .logo-top:hover {
@@ -33,21 +32,22 @@
 }
 
 .nav-top {
+    display: flex;
     width: 980px;
     height: 48px;
     margin: 0 auto 0 auto;
-    padding: 0 22px 0 10px;
+    padding: 0 22px 0 8px;
 }
 
 .nav-subtop {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 52px;
+    height: 48px;
     max-width: 980px;
     width: 100%;
     margin: 0 auto 0 auto;
-    padding: 0 22px 0 22px;
+    padding: 0 22px 0 10px;
 }
 
 .nav-subtop-content {
@@ -107,7 +107,7 @@ header {
     position: absolute;
     z-index: 1;
     background-color: rgb(0, 0, 0, 0.75);
-    width: 100vw;
+    width: 100%;
 }
 
 .bouton-commencer {
@@ -121,15 +121,17 @@ header {
     line-height: 1.3333733333;
     font-family: 'SF Pro Display Light';
     border: 0px;
-    background-color: #06c;
-    transition: all 0.24s ease-in-out;
+    background-color: #0071E3;
+    /* transition: all 0.2s ease-in-out; */
     color: white;
-    z-index: 1;
+    z-index: 0;
+
+    cursor: pointer;
 
 }
 
 .bouton-commencer:hover {
-    background-color: #007AFF ;
+    background-color: #0076DF ;
 }
 
 .container2{
@@ -138,27 +140,22 @@ header {
     width: 100%;
     height: 100%;
     z-index: 0;
+    box-sizing: border-box;
 }
 
 .video {
     position: relative;
-    width: 100%;
+    width: 100%; 
     margin: 0 auto;
-    /* overflow: hidden; */
     z-index: 0;
 }
-.video video {
-    display: block;
-    width: 100%;
-    height: auto;
-    z-index: 0;
-}
+
 .video video {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
-    width: 100vw;
+    z-index:  0x;
+    width: 100%;
 }
 
 header {
@@ -177,4 +174,26 @@ header {
 
 .nav-subtop-background {
     display: none;
+}
+
+.navtop-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: inherit;
+    gap: 32px;
+    margin: 0 0 7px 30px;
+    color: #D8D8DC;
+}
+
+.a-navtop{
+    font-family: 'SF Pro';
+    font-size: 13px;
+    color: #AEAEB2;
+    text-decoration: none;
+}
+
+.search-navtop{
+    margin: 7px 0 0 0;
+    fill: #D8D8DC;
 }

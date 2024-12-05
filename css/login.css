@@ -23,47 +23,10 @@
     align-items: flex-start;
 }
 
-.nav-subtop-background::after{
-    content: '';
-    display: block;
-    height: 1px;
-    width: 980px;
-    background-color: #d2d2d2;
-    margin:-4px auto 0 auto
-}
 
-.nav-top {
-    width: 980px;
-    height: 48px;
-    margin: 0 auto 0 auto;
-    padding: 0 22px 0 10px;
-}
 
-.nav-subtop {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: auto;
-    max-width: 980px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 0 20px 0 ;
-    box-sizing: border-box;
-}
 
-.nav-subtop-content {
-    font-family: 'SF Pro Display Regular';
-    font-size: 40px;
-    font-weight: 600;
-    letter-spacing: .03em;
-    line-height: 1.1;
-    max-width:980px;
-    width: 100%;
-    display: block;
-    white-space: nowrap;
-    padding: 25px 0 0 0 ;
-    height: 122px;
-}
+
 
 .sub-title  {
     display: block;
