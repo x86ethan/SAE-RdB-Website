@@ -46,7 +46,7 @@
     max-width: 980px;
     height: 48px;
     margin: 0 auto 0 auto;
-    padding: 0 22px 0 8px;
+    padding: 0 22px 0 22px;
 }
 
 .nav-subtop {
@@ -57,7 +57,7 @@
     max-width: 980px;
     width: 100%;
     margin: 0 auto 0 auto;
-    padding: 0 22px 0 10px;
+    padding: 0 22px 0 22px;
 }
 
 .nav-subtop-content {
@@ -105,8 +105,8 @@ body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    min-height: 100vh;
-    min-width: 100vw;
+    min-height: 100%;
+    min-width: 100%;
 }
 
 body {
@@ -332,4 +332,8 @@ video {
         opacity: 0;
         margin: 0 -30px 0 0;
     }
+}
+
+@media screen and (max-width: 600px) {
+    /*A Faire pour un meilleur responsive */    
 }
