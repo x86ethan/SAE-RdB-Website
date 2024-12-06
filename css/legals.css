@@ -154,3 +154,43 @@ footer {
     }
 }
 
+.header {
+
+    height: 400px;
+    
+    background-image: url("../img/legals-header.jpg");
+    background-position: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    text-align: center;
+}
+
+.header-title {
+    font-size: 40px;
+    letter-spacing: -0.144px;
+    font-family: "SF Pro Display";
+    font-weight: 600;
+    line-height: 44px;
+}
+
+.header-sub {
+    font-size: 19px;
+    font-family: "SF Pro Display Light";
+    letter-spacing: 0.228px;
+    line-height: 23px;
+}
+
+.wrapper-nav {
+    background-color: #FFFFFC;
+    backdrop-filter: none;
+}
+
+.wrapper-subnav {
+    background-color: transparent;
+    backdrop-filter: none;
+}

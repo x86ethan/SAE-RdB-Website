@@ -97,6 +97,19 @@ body, html {
     }
 }
 
+.navtop-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+    gap: 32px;
+    margin: 0 0 7px 30px;
+    color: #D8D8DC;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    flex: 0 1 auto;
+}
+
 .logo-top {
     position: relative;
     height: 44px;
@@ -125,7 +138,6 @@ header {
     width: 100%;
     max-width: 9999px;
     align-items: flex-start;
-
     position: sticky;
     top: 0px;
 }
@@ -140,7 +152,8 @@ header {
 }
 
 .nav-top {
-    width: 980px;
+    width: 100%;
+    max-width: 980px;
     height: 48px;
     margin: 0 auto 0 auto;
     padding: 0 22px 0 10px;
@@ -155,7 +168,6 @@ header {
     width: 100%;
     margin: 0 auto 0 auto;
     padding: 0 22px 0 22px;
-
     position: sticky;
     top: 0;
 }
@@ -191,10 +203,6 @@ header {
     overflow: hidden;
     text-overflow: ellipsis;
     flex: 0 1 auto;
-}
-
-.navtop-container {
-    display: flex;
 }
 
 .nav-subtop-content-right:hover {
