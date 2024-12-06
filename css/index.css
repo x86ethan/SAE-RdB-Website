@@ -15,11 +15,20 @@
     animation: nofilllogo .32s forwards;
 }
 
+.wrapper-nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
 .wrapper-subnav {
     display: flex;
     width: 100%;
     max-width: 9999px;
     align-items: flex-start;
+    margin-top: -48px;
+    position: sticky;
+    top: 0px;
 }
 
 .nav-subtop-background::after{
@@ -68,6 +77,20 @@
     min-width: 0;
 }
 
+#nav-background {
+
+    position: sticky;
+    top: -48px;
+    z-index: 1;
+
+    background-color: #161617CC;
+    backdrop-filter: saturate(1.8) blur(20px);
+
+    width: 100vw;
+    height: 96px;
+
+}
+
 .container {
     width: 100%;
     height: 100%;
@@ -80,16 +103,13 @@ body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 100%;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    overflow: hidden;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
 main {
@@ -104,11 +124,14 @@ main {
 }
 
 header {
-    position: absolute;
+    z-index: 1;
+}
+
+/*header {
     z-index: 1;
     background-color: rgb(0, 0, 0, 0.75);
     width: 100%;
-}
+} */
 
 .bouton-commencer {
     width: fit-content;
@@ -142,7 +165,7 @@ header {
     box-sizing: border-box;
 }
 
-.video {
+/* .video {
     position: relative;
     width: 100%; 
     margin: 0 auto;
@@ -155,12 +178,20 @@ header {
     left: 0;
     z-index:  0x;
     width: 100%;
+} */
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center center;
 }
 
-header {
-    background-color: #161617CC;
-    backdrop-filter: blur(30px);
-}
 
 .nav-subtop-background {
     display: none;
@@ -186,6 +217,10 @@ header {
 
 .a-navtop:hover{
     color: #EBEBF0;
+}
+
+.search {
+    cursor: pointer;
 }
 
 .search-navtop{
