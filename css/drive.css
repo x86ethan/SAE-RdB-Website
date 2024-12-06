@@ -1,26 +1,4 @@
-.bouton-commencer {
-    width: fit-content;
-    height: fit-content;
-    padding: 5px 10px 5px 10px;
-    border-radius: 12px;
-    font-size: 12px;
-    font-weight: 200;
-    letter-spacing: .01em;
-    line-height: 1.3333733333;
-    font-family: 'SF Pro Display Light';
-    border: 0px;
-    background-color: #0071E3;
-    /* transition: all 0.2s ease-in-out; */
-    color: white;
-    z-index: 0;
 
-    cursor: pointer;
-
-}
-
-.bouton-commencer:hover {
-    background-color: #0076DF ;
-}
 
 #article {
     width: 980px;
@@ -32,9 +10,9 @@
 #article-header {
     text-align: center;
     background-image: url("../img/driving.jpeg");
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-size: cover;
-    background-position-y: 100%;
+    background-position-y: 60%;
     height: 450px;
 }
 
@@ -53,4 +31,29 @@
     font-size: 24px;
     text-align: center;
     margin: 0; 
+}
+
+#article-headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 40px;
+}
+
+#apply-button {
+
+    padding: 15px;
+    min-width: 400px;
+
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+
+    font-size: 1rem;
+
+    cursor: pointer;
+
 }

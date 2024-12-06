@@ -14,11 +14,14 @@
 body, html {
     padding: 0;
     margin: 0;
-    overflow: auto;
+    overflow: visible;
 }
 
 * {
     font-family: 'SF Pro';
+
+    --button-color: #0071e3;
+    --link-color: #06c;
 }
 
 .default-card {
@@ -115,6 +118,11 @@ body, html {
     width: 100%;
     max-width: 9999px;
     align-items: flex-start;
+
+    position: sticky;
+    top: 0px;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(30px);
 }
 
 .nav-subtop-background::after{
@@ -182,6 +190,30 @@ body, html {
 
 .nav-subtop-content-right:hover {
     color: #06c;
+}
+
+.bouton-commencer {
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 10px 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 200;
+    letter-spacing: .01em;
+    line-height: 1.3333733333;
+    font-family: 'SF Pro Display Light';
+    border: 0px;
+    background-color: #0071E3;
+    /* transition: all 0.2s ease-in-out; */
+    color: white;
+    z-index: 0;
+
+    cursor: pointer;
+
+}
+
+.bouton-commencer:hover {
+    background-color: #0076DF ;
 }
 
 @keyframes filllogo {
