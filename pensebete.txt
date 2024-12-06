@@ -34,3 +34,30 @@ Mettre un texte "Mes réservations"
         <option value="Inde">Inde</option>
         <option value="Chine">Chine</option>
     </select>
+
+
+    @keyframes slideout {
+
+    from {
+        opacity: 0;
+        margin: 0 0 -1px -11px ;
+    }
+
+    to {
+        opacity: 1;
+        margin: 0 0 -1px -1px;
+    }
+}
+
+@keyframes slideext {
+
+    from {
+        opacity: 1;
+        margin: 0 0 -1px -1px ;
+    }
+
+    to {
+        opacity: 0;
+        margin: 0 0 -1px 10px;
+    }
+}

@@ -110,7 +110,7 @@ main > div * {
     color: #242426;
 }
 
-.name-wrapper, .id-wrapper, .email-wrapper{
+.name-wrapper, .id-wrapper, .email-wrapper, .phone-wrapper{
     display: flex;
     gap: 10px;
     max-width: 500px;
@@ -118,7 +118,7 @@ main > div * {
 }
 
 
-.form-textbox-label, .form-emailbox-label, .form-passwordbox-label, .form-confirm-passwordbox-label {
+.form-textbox-label, .form-emailbox-label, .form-passwordbox-label, .form-confirm-passwordbox-label, .form-phonebox-label {
     position: absolute;
     top: 50%;
     left: 10px;
@@ -154,7 +154,7 @@ main > div * {
     display: flex;
 }
 
-.email-box, .password-box, .password-wrapper, .confirm-password-wrapper, .confirm-password-box {
+.email-box, .password-box, .password-wrapper, .confirm-password-wrapper, .confirm-password-box, .phone-box {
     width: 100%;
     position: relative;
     display: flex;
@@ -163,7 +163,8 @@ main > div * {
 .form-textbox-input, 
 .form-emailbox-input, 
 .form-passwordbox-input,
-.form-confirm-passwordbox-input {
+.form-confirm-passwordbox-input,
+.form-phonebox-input {
     width: 100%;
     padding: 10px;
     padding-top: 20px;
@@ -173,10 +174,10 @@ main > div * {
     outline: none;
     background: #fff;
     box-sizing: border-box; 
-    transition: border-color 0.2s ease-in-out;
+    transition: border-color 0.24s ease-in-out;
 }
 
-.form-textbox-input:focus, .form-emailbox-input:focus, .form-passwordbox-input:focus, .form-confirm-passwordbox-input:focus {
+.form-textbox-input:focus, .form-emailbox-input:focus, .form-passwordbox-input:focus, .form-confirm-passwordbox-input:focus, .form-phonebox-input:focus {
     border: 2px solid #0071e3;
     padding-top: 18px;
 }
@@ -191,6 +192,8 @@ label {
     transition: all 0.2s ease;
 }
 
+.form-phonebox-input:focus + label,
+.form-phonebox-input:not(:placeholder-shown) + label,
 .form-textbox-input:focus + label,
 .form-textbox-input:not(:placeholder-shown) + label,
 .form-emailbox-input:focus + label,
