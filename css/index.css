@@ -160,12 +160,18 @@ header {
 }
 
 .container2{
+    display: flex;
     margin: 0 ;
     padding: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: 0;
     box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 125px 0 0 0;
+    gap: 10px;
 }
 
 /* .video {
@@ -187,10 +193,8 @@ video {
     position: absolute;
     top: 0;
     left: 0;
-
     height: 100%;
     width: 100%;
-
     object-fit: cover;
     object-position: center center;
 }
@@ -288,13 +292,13 @@ video {
 .big-logo {
     color: white;
     font-family: "SF Pro Display Medium";
-    font-size: 8.5em;
+    font-size: 10em;
     line-height: .875em;
 }
 
 .big-title {
     font-family: 'SF Pro Display Medium';
-    font-size: 10em;
+    font-size: 12em;
     /* color: #D8D8DC; */
     color: white;
     letter-spacing: .003em;
@@ -308,8 +312,42 @@ video {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    z-index: 1;
+    z-index: 0;
+    position: sticky;
+    margin: 0 0 75px 0;
 }
+
+.container3, .container4, .container5{
+    height: 50vh;
+    width: 100%;
+}
+
+.logo-plans {
+    display: flex;
+    margin: 100px 0 0 0;
+}
+
+.logos {
+    margin: 0 0 10px 0;
+}
+
+.text-container{
+    font-size: 116px;
+    font-family: 'SF Pro Display Medium';
+    font-weight: 700;
+    line-height: 1.0348027586;
+    letter-spacing: -0.015em;
+}
+
+.text-container2{
+    font-size: 80px;
+    font-family: 'SF Pro Display Medium';
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.015em;
+}
+
+
 
 @keyframes filllogo {
     from {
