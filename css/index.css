@@ -289,12 +289,16 @@ video {
     display: flex;
     height: 650px;
     width: 300px;
-    margin: 30px -20px 0 410px; /*Margin pour positionner correctement le logo */
+    margin: 27px -25px 0 410px; /*Margin pour positionner correctement le logo */
+    fill: #D8D8DC;
 }
 
 .big-title {
-    font-family: 'SF Pro';
-    font-size: 21em;
+    font-family: 'SF Pro Display Medium';
+    font-size: 20em;
+    color: #D8D8DC;
+    margin: 0 0 10px 0;
+    letter-spacing: .003em;
 }
 
 .big-title-container {
