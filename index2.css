@@ -19,12 +19,13 @@
     position: absolute;
     top: 0;
     width: 100%;
+    max-width: 100%;
 }
 
 .wrapper-subnav {
     display: flex;
     width: 100%;
-    max-width: 9999px;
+    max-width: 100%;
     align-items: flex-start;
     margin-top: -48px;
     position: sticky;
@@ -79,23 +80,17 @@
 }
 
 .nav-background {
-
     position: sticky;
     top: -48px;
     z-index: 1;
-
     background-color: #161617CC;
     backdrop-filter: saturate(1.8) blur(20px);
-
     width: 100%;
-    max-width: 100vw;
     height: 96px;
 
 }
 
 .container {
-    width: 100%;
-    height: 100%;
     box-sizing: border-box;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -105,14 +100,13 @@ body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    max-height: 100%;
-    max-width: 100%;
+    height: auto;
+    overflow-x: hidden;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
 }
 
 main {
@@ -120,7 +114,6 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    min-height: 100%;
     text-align: center;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -129,7 +122,6 @@ main {
 
 header {
     z-index: 1;
-    width: 100%;
 }
 
 /*header {
@@ -154,7 +146,6 @@ header {
     color: #F2F2F7;
     z-index: 0;
     cursor: pointer;
-
 }
 
 .bouton-commencer:hover {
@@ -211,6 +202,7 @@ video {
     flex-direction: row-reverse;
     align-items: center;
     width: 100%;
+    max-width: 100%;
     gap: 32px;
     margin: 0 0 7px 30px;
     color: #D8D8DC;
@@ -291,6 +283,7 @@ video {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }*/
+
 .big-logo {
     color: white;
     font-family: "SF Pro Display Medium";
@@ -309,9 +302,7 @@ video {
 }
 
 .big-title-container {
-
     height: 50vh;
-    width: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -322,7 +313,6 @@ video {
 
 .container3, .container4, .container5{
     height: 50vh;
-    width: 100%;
 }
 
 .logo-plans {
@@ -334,7 +324,7 @@ video {
     margin: 0 0 10px 0;
 }
 
-.text-container{
+.text-container {
     font-size: 116px;
     font-family: 'SF Pro Display Medium';
     font-weight: 700;
@@ -342,15 +332,13 @@ video {
     letter-spacing: -0.015em;
 }
 
-.text-container2{
+.text-container2 {
     font-size: 80px;
     font-family: 'SF Pro Display Medium';
     font-weight: 700;
     line-height: 1.05;
     letter-spacing: -0.015em;
 }
-
-
 
 @keyframes filllogo {
     from {
