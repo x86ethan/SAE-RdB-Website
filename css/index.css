@@ -400,7 +400,7 @@ video {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 
     .logo-top {
         height: 50px ;
