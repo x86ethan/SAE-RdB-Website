@@ -45,7 +45,11 @@ body,html {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 2px;
+}
+
+.nav-container:last-child {
+    flex-direction: row;
+    gap: 5px;
 }
 
 .flex-reverse {
@@ -57,7 +61,7 @@ body,html {
     text-decoration: none;
     color: black;
     font-size: 1.2em;
-    padding: 10px;
+    padding: 8px;
     border-radius: 5px 0 0 5px;
     z-index: 3;
     position: relative;
@@ -71,7 +75,7 @@ body,html {
     position: absolute;
     right: -20px;
     top: 0;
-    padding: 10px;
+    padding: 8px;
     border-radius: 0 5px 5px 0;
     z-index: 2;
     transition: all 0.15s ease-in-out;
@@ -92,21 +96,28 @@ body,html {
 
 .nav-dimmed {
     color: #8E8E8E;
+    font-weight: 200;
+    padding: 2px;
+    font-size: 0.9em;
 }
 
 .nav-dimmed:hover {
     background-color: transparent;
-    color: black;
+    text-decoration: underline;
+    color: #8E8E8E;
 }
+
 
 .nav-dimmed::after {
     color: #8E8E8E;
+    opacity: 0;
 }
 
 .nav-dimmed:hover::after {
     background-color: transparent;
     color: black;
     transform: translateX(5px);
+    opacity: 0;
 }
 
 #map {
