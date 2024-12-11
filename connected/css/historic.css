@@ -169,11 +169,17 @@ button{
 }
 
 .card{
-    max-width: 98%;
-    width: 100%;
-    border: #242426;
-    border-style: solid;
-    border-width: 0.1em;
+    display: flex;
+    max-width: 100%;
+    min-width: 50%;
+    width: 90%;
+    height: 80px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 5px;
+    box-shadow: 0 2px 6px rgb(0, 0, 0, 0.2);
     
 }
 .container {
