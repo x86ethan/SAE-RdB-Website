@@ -3,7 +3,7 @@
     height: 100%;
     box-sizing: border-box;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .container2 {
@@ -12,9 +12,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 25px;
-    z-index: -1;
+    margin: 0 0 20px 0;
 }
 
 body, html {
@@ -22,7 +21,7 @@ body, html {
     padding: 0;
     box-sizing: border-box;
     height: 100%;
-    overflow: hidden; /* Empêche le défilement de la page */
+    overflow: auto; /* Empêche le défilement de la page */
 }
 
 body {
@@ -45,14 +44,18 @@ main {
 .container-1 {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 96px);
+    height: 100%;
     width: 100%;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .subheader-title {
+    display: flex;
     font-family: 'SF Pro Display Medium';
     font-size: 2em;
+    margin: 20px 0 20px 0 ;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-link {
@@ -155,14 +158,14 @@ main {
     }
     
     to {
-        scale: 1.05;
+        scale: 1.025;
     }
 }
 
 @keyframes notscaling {
     
     from {
-        scale: 1.05;
+        scale: 1.025;
     }
 
     to {
@@ -189,4 +192,20 @@ main {
     to {
         fill: #363638;
     }
+}
+
+@media (max-height: 600px) {
+
+    .card {
+        margin: 10px 0 10px 0;
+    }
+
+    .subheader-title {
+        font-size: 1.2em; /* Réduit la taille des titres */
+    }
+
+    .driver-name {
+        font-size: 1em; /* Réduit la taille du texte */
+    }
+
 }
