@@ -371,19 +371,46 @@ video {
 
 .title-cards {
     position: absolute;
-    font-size: 4em;
+    font-size: 6em;
     font-family: 'SF Pro Display Medium';
+    z-index: 1;
+    top: 7%;
+}
+
+.title-container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    top: 7%;
+    padding: 20px;
+    width: 100%;
     z-index: 1;
 }
 
-.card {
-    position: absolute;
-    top: 100px;  /* Ajustez la position */
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 2;
+.cards{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        top: 12.5%;
+        gap: 50px;
+}
+
+.card1 {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    max-width: 980px;
+    max-height: 500px;
+    border-radius: 20px;
 }
 
 @keyframes filllogo {
