@@ -396,14 +396,14 @@ video {
         width: 100%;
         height: 100%;
         z-index: 1;
-        top: 12.5%;
+        top: 15%;
         gap: 50px;
 }
 
 .card1 {
     display: flex;
     background-color: white;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     gap: 20px;
     width: 100%;
@@ -411,6 +411,148 @@ video {
     max-width: 980px;
     max-height: 500px;
     border-radius: 20px;
+}
+
+.video-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.video {
+    border-radius: 20px 0 0 20px ;
+    height: 500.6px;
+    width: 276px;
+    left: auto;
+    top: auto;
+    right: auto;
+    bottom: auto;
+}
+
+.text-card-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-title {
+    font-size: 2em;
+    font-family: 'SF Pro Display Medium';
+}
+
+.card-text {
+    overflow: hidden;
+    font-size: 1.25em;
+    font-family: 'SF Pro Text Medium';
+}
+
+.important {
+    font-size: 1.25em;
+    font-family: 'SF Pro Text Medium';
+}
+
+.card1:hover {
+    animation: scaling .75s forwards;
+
+    .important {
+        animation: importantchange .75s forwards;
+    }
+
+    .card-title {
+        animation: textsliding .75s forwards;
+    }
+}
+
+.card1:not(:hover) {
+    animation: notscaling .75s forwards;
+
+    .card-title {
+        animation: textslideout .75s forwards;
+    }
+
+    .important {
+        animation: notimportantchange .75s forwards;
+    }
+}
+
+@keyframes importantchange {
+
+    from {
+        color: black;
+        font-size: 1.25em;
+        padding: 0;
+    }
+    
+    to {
+        color: #28cd41 ;
+        font-size: 2em;
+        padding: 10px 0 0 0;
+    }
+}
+
+@keyframes notimportantchange {
+    
+    from {
+        color: #28cd41;
+        font-size: 2em;
+        padding: 10px 0 0 0;
+    }
+
+    to {
+        color: black;
+        font-size: 1.25em;
+        padding: 0;
+    }
+}
+
+@keyframes textsliding {
+
+    from {
+        color: black;
+    }
+
+    to {
+        color: #48484A;
+    }
+}
+
+@keyframes textslideout {
+
+    from {
+        color: #48484A;
+    }
+
+    to {
+        color: black;
+    }
+    
+}
+
+@keyframes scaling {
+    
+    from {
+        scale: 1;
+    }
+    
+    to {
+        scale: 1.025;
+    }
+}
+
+@keyframes notscaling {
+    
+    from {
+        scale: 1.025;
+    }
+
+    to {
+        scale: 1;
+    }
 }
 
 @keyframes filllogo {
