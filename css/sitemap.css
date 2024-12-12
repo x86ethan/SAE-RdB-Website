@@ -55,6 +55,13 @@ main {
 
     color: initial;
     text-decoration: none;
+    transition: color .2s ease;
+    transition: background-color .2s ease-in-out;
+}
+
+#ticket-icon {
+    height: 25px;
+    width: auto;
 }
 
 .button {
@@ -79,6 +86,7 @@ main {
     background-color: #0076DF ;
 }
 
+
 .div-button {
     display: flex;
     justify-content: center;
@@ -90,7 +98,10 @@ main {
 
 .card:hover {
     animation: scaling .34s forwards;
-}
+    color: #06c;
+    background-color: #fcfcfc;
+} 
+
 
 .card:not(:hover){
     animation: notscaling .34s forwards;
