@@ -32,6 +32,9 @@ main {
 
 .title {
     font-family: 'SF Pro Display Medium';
+    font-weight: 600;
+    font-size: 1.2em;
+
 }
 
 .card {
@@ -49,6 +52,9 @@ main {
     font-family: 'SF Pro';
     padding: 1%;
     text-align: center;
+
+    color: initial;
+    text-decoration: none;
 }
 
 .button {
@@ -83,34 +89,34 @@ main {
 }
 
 .card:hover {
-    animation: scaling .24s forwards;
+    animation: scaling .34s forwards;
 }
 
 .card:not(:hover){
-    animation: notscaling .24s forwards;
+    animation: notscaling .34s forwards;
 }
 
 @keyframes scaling{
     from {
         scale: 1;
-        box-shadow: 0 4px 6px rgb(0, 0, 0, 0.2);
+        box-shadow: 0 5px 5px rgb(0, 0, 0, 0.1);
     }
 
     to {
-        scale: 1.05;
-        box-shadow: 0 6px 8px rgb(0, 0, 0, 0.4);
+        scale: 1.02;
+        box-shadow: 0 5px 20px rgb(0, 0, 0, 0.1);
     }
 }
 
 @keyframes notscaling{
     
     from {
-        scale: 1.05;
-        box-shadow: 0 6px 8px rgb(0, 0, 0, 0.4);
+        scale: 1.02;
+        box-shadow: 0 5px 20px rgb(0, 0, 0, 0.1);
     }
     
     to{
         scale: 1;
-        box-shadow: 0 4px 6px rgb(0, 0, 0, 0.2);
+        box-shadow: 0 5px 5px rgb(0, 0, 0, 0.1);
     }
 }
