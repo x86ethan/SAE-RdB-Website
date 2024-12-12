@@ -404,7 +404,7 @@ video {
         gap: 50px;
 }
 
-.card1 {
+.card1,.card2 {
     display: flex;
     background-color: white;
     flex-direction: row;
@@ -415,6 +415,7 @@ video {
     max-width: 980px;
     max-height: 500px;
     border-radius: 20px;
+    transition: all .75s ease;
 }
 
 .video-card-container {
@@ -452,6 +453,7 @@ video {
 .card-title {
     font-size: 2em;
     font-family: 'SF Pro Display Medium';
+    transition: all .75s ease;
 }
 
 .card-text {
@@ -463,104 +465,20 @@ video {
 .important {
     font-size: 1.25em;
     font-family: 'SF Pro Text Medium';
+    transition: all .75s ease;
 }
 
-.card1:hover {
-    animation: scaling .75s forwards;
+.card1:hover, .card2:hover {
+    transform: scale(1.025);
 
     .important {
-        animation: importantchange .75s forwards;
-    }
-
-    .card-title {
-        animation: textsliding .75s forwards;
-    }
-}
-
-.card1:not(:hover) {
-    animation: notscaling .75s forwards;
-
-    .card-title {
-        animation: textslideout .75s forwards;
-    }
-
-    .important {
-        animation: notimportantchange .75s forwards;
-    }
-}
-
-@keyframes importantchange {
-
-    from {
-        color: black;
-        font-size: 1.25em;
-        padding: 0;
-    }
-    
-    to {
-        color: #28cd41 ;
-        font-size: 2em;
-        padding: 10px 0 0 0;
-    }
-}
-
-@keyframes notimportantchange {
-    
-    from {
         color: #28cd41;
         font-size: 2em;
         padding: 10px 0 0 0;
     }
 
-    to {
-        color: black;
-        font-size: 1.25em;
-        padding: 0;
-    }
-}
-
-@keyframes textsliding {
-
-    from {
-        color: black;
-    }
-
-    to {
+    .card-title {
         color: #48484A;
-    }
-}
-
-@keyframes textslideout {
-
-    from {
-        color: #48484A;
-    }
-
-    to {
-        color: black;
-    }
-    
-}
-
-@keyframes scaling {
-    
-    from {
-        scale: 1;
-    }
-    
-    to {
-        scale: 1.025;
-    }
-}
-
-@keyframes notscaling {
-    
-    from {
-        scale: 1.025;
-    }
-
-    to {
-        scale: 1;
     }
 }
 
