@@ -107,4 +107,17 @@
         url('../../fonts/SF-Pro-Text-Medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}   
+
+body {
+    overflow-x: hidden;
+}
+
+main {
+    min-height: calc(100% - 202px);
+}
+
+.footer {
+    margin: 0;  
+    margin-top: 20px; 
 }
