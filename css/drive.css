@@ -65,6 +65,7 @@
 
 .wrapper-subnav {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 255;
 }
 
 #article-body {
@@ -120,6 +121,7 @@
 #article-body > section > img:hover {
     transform: scale(102%);
     box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+    z-index: 1
 }
 
 @media screen and (max-width: 980px) {
