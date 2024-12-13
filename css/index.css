@@ -624,8 +624,7 @@ video {
     }
 
     .image-planete {
-        height: 40px;
-        width: 40px;
+        opacity: 0;
     }
 
     .card1,.card2,.card3,.card4,.card5 {
