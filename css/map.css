@@ -166,16 +166,55 @@ body,html {
 }
 
 #searchbar {
-    padding: 5px;
     resize: none;
     overflow-y: hidden;
     overflow-x: hidden;
     white-space: nowrap;
     background-color: rgba(255, 255, 255, 0.9);
     border: 1px solid #E1E1E1;
-    padding: 10px;
+    
     font-size: 1em;
     border-radius: 5px;
+
+    padding: 12.5px;
+    padding-left: 35px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    height: 100%;
+    width: 100%;
+
+    box-sizing: border-box;
+
+    z-index: 2;
+}
+
+#searchbar-wrapper {
+    position: relative;
+    box-sizing: border-box;
+    height: 45px;
+    width: 100%;
+
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+#search-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    padding: 3px;
+
+    background-color: transparent;
+    border: none;
+
+    z-index: 3;
+    cursor: pointer;
 }
 
 #searchbar::placeholder {
