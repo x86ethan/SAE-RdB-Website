@@ -1,0 +1,261 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: row;
+    border: none;
+}
+
+.name-wrapper, .id-wrapper, .email-wrapper, .phone-wrapper{
+    display: flex;
+    gap: 10px;
+    max-width: 500px;
+    width: 100%;
+}
+
+
+.form-textbox-label, .form-emailbox-label, .form-passwordbox-label, .form-confirm-passwordbox-label, .form-phonebox-label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #888; 
+    pointer-events: none;
+    font-size: 1rem;
+}
+
+.subheader-centered {
+    margin-bottom: 20px;
+    color: #666;
+    font-size: 1.12rem;
+    line-height: 1.5;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 15px;
+}
+
+.form-textbox{
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+.email-box, .password-box, .password-wrapper, .confirm-password-wrapper, .confirm-password-box, .phone-box {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.form-textbox-input, 
+.form-emailbox-input, 
+.form-passwordbox-input,
+.form-confirm-passwordbox-input,
+.form-phonebox-input {
+    width: 100%;
+    padding: 10px;
+    padding-top: 20px;
+    font-size: 1rem;
+    border: 1px solid #888;
+    border-radius: 10px;
+    outline: none;
+    background: #fff;
+    box-sizing: border-box; 
+    transition: border-color 0.24s ease-in-out;
+}
+
+.form-textbox-input:focus, .form-emailbox-input:focus, .form-passwordbox-input:focus, .form-confirm-passwordbox-input:focus, .form-phonebox-input:focus {
+    border: 2px solid #0071e3;
+    padding-top: 18px;
+}
+
+label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 0.9rem;
+    color: #888;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+
+
+.form-phonebox-input:focus + label,
+.form-phonebox-input:not(:placeholder-shown) + label,
+.form-textbox-input:focus + label,
+.form-textbox-input:not(:placeholder-shown) + label,
+.form-emailbox-input:focus + label,
+.form-emailbox-input:not(:placeholder-shown) + label,
+.form-passwordbox-input:focus + label,
+.form-passwordbox-input:not(:placeholder-shown) + label,
+.form-confirm-passwordbox-input:focus +label,
+.form-confirm-passwordbox-input:not(:placeholder-shown) + label{
+    /* animation: input-focus 0.24s forwards ease-in-out; */
+    top: 13px;
+    left: 10px;
+    font-size: 0.8rem;
+}
+
+.email-text {
+    display: flex;
+    font-family: 'SF Pro';
+    font-size: 14px;
+    color: #545456;
+    margin: 15px 0 0 0;
+    text-align: left;
+    width: 100%;
+}
+
+.container-input {
+    display: flex;             
+    flex-direction: column;  
+    align-items: start;      
+    height: 100%;            
+    margin: 0;                
+    padding: 10px 0 10px 0;               
+}
+
+.radio-sms-input,
+.radio-call-input {
+    display: flex;
+    justify-content: start;
+    width: 18px;
+    height: 18px;
+}
+
+.validation-input-sms,
+.validation-input-call {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #888; 
+    padding: 0 0 10px 0;
+}
+
+.radio-sms-label, .radio-call-label {
+    padding: 0 0 0 10px;
+    font-size: 17px;
+}
+
+.validation-radio-box-content-0, .validation-radio-box-content-1 {
+    display: flex;  
+    margin: 10px 0 10px 0;               
+    padding: 0;            
+    width: 100%;              
+    text-align: left;
+    font-family: 'SF Pro';
+}
+
+.validation-radio-box-content-0 {
+    font-size: 1rem;
+    color: #666;
+}
+
+.validation-radio-box-content-1 {
+    font-size: 1.2rem;
+}
+
+.privacy-wrapper {
+    height: 141.3px;
+}
+
+.privacy-image-logo {
+    width: 35px;
+    margin: 0 0 5px 0;
+}
+
+.privacy-wrapper a {
+    color: #06c;
+    text-decoration: none;
+    display: inline-flex;
+    font-family: 'SF Pro Text Medium';
+}
+
+.privacy-wrapper a:hover {
+    text-decoration: underline;
+}
+
+.privacy-text-span {
+    color: #6e6e73;
+    font-size: 12px;
+    letter-spacing: -.05em;
+    font-family: 'SF Pro Text Medium';
+    line-height: .7em;
+    height: 100%;
+    max-height: 94px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    height: 44px;
+    padding: 20px 0 0 0;
+    margin: 0 0 35px 0;
+}
+
+.submit-button-label {
+    font-family: 'SF Pro Display Regular';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    color: #fff;
+    pointer-events: none; 
+    z-index: 2;
+    padding: 20px 0 0 0;
+    letter-spacing: 0.033em;
+    font-weight: 200;
+}
+
+.submit-button input[type="submit"] {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #0071e3;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    height: 44px;
+}
+
+.submit-button input[type="submit"]:hover {
+    animation: submit-in-progress 1s forwards;
+}
+
+.separator {
+    height: 2px;
+    background-color: #DEDEDE;
+    width: 100%;
+    border-radius: 1px;
+}
+
+.subheadline {
+    
+}

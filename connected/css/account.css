@@ -116,15 +116,16 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    min-height: 60vh;
 }
 
-.Menu-compte > img{
+.account-menu > img{
     width: 100px;
     height: 100px;
     border-radius: 50%;
 }
 
-button{
+button {
     color : white;
     border-radius: 10%;
     background-color: rgb(0, 122, 255);
@@ -144,38 +145,51 @@ button{
     margin: -2px auto 0;
 }
 
-.Menu-compte{
+.account-menu{
     display: flex ;
     flex-direction: column;
     margin: 0 0 0 0;
-    max-width: 200px;
     width: 100%;
+    max-width: 250px;
     text-align: start;
+    padding-right: 40px;
 }
-.Menu-compte a{
-    font-size: 18px;
-    margin-bottom: 4% ;
-    font-weight: bolder;
+.account-menu a{
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "SF Pro Text";
+    letter-spacing: -0.374px;
+    line-height: 25px;
+    color: rgb(29, 29, 31);
+
+    height: 32px;
 }
 
-.Menu-compte div div{
+.account-menu div div{
     margin-top: 10%;
     margin-bottom: 5%;
     font-family: 'SF Pro';
     font-size: 24px;
 }
 
-.Menu-compte div{
+.account-menu div{
     margin-bottom: 20% ;
 }
 
-.entete{
+.heading {
     display: flex;
     flex-direction: row;
+
+    line-height: 23px;
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: -10px;
+    padding: 10px 0 5px 0;
 }
 
-#Selected{
-    color: #06c;
+#selected{
+    color: rgb(0, 113, 227);
+    font-weight: 700;
 }
 
 
@@ -195,28 +209,25 @@ button{
     display: flex;
     flex-direction: row;
     margin: 10px 0 0 0;
-    padding-top: 2.5%;
 }
 
 .container3 {
     display: flex;
     flex-direction: column;
     /*background-color: aqua;       Couleur de repaire*/
-    max-width: 100%;
-    width: 20%;
     overflow: hidden;
+    margin-right: 40px;
 }
 
 .container4{
     max-width: 100%;
     width: 78%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
-    justify-content: space-between;
-    overflow: hidden;
+    justify-content: flex-start;
+    /* overflow: hidden; *+/
     /*background-color: #1C1C1E;    Couleur de repaire*/
-    margin-left: 5%;
     transition: width 0.3s ease;
 }
 
@@ -225,47 +236,72 @@ button{
     flex-wrap: wrap;
     gap: 20px; 
     justify-content: left;
-    margin-left: 2%;
     animation: container5 1.24s forwards;
+    width: 650px;
 }
 
-.bloc{
-    flex: 1 1 calc(27% - 20px); 
-    min-width: 350px; 
-    max-width: 350px;
-    width: auto;
-    min-height: 125px;
-    max-height: 150px;
-    height: auto;
+.card{
+    width: 315px; 
+    height: 125px;
     box-sizing: border-box;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    padding: 5px;
-    box-shadow: 0 2px 6px rgb(0, 0, 0, 0.2);
+    border: 1px solid hsla(240,6%,83%,.63);
+    border-radius: 11px;
+
+    box-shadow: 0 10px 10px rgba(76,76,109,.0705882353);
+    background: linear-gradient(120deg,#fff 45%,#f5f5f5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    cursor: pointer;
 }
 
-.bloc:hover{
+/* .card:hover{
     animation: colorhover .24s forwards ;
 }
 
-.bloc:not(:hover){
+.card:not(:hover){
     animation: notcolorhover .24s forwards;
 }
 
-.bloc h3{
+.card h3{
     margin-bottom: 3px;
+} */
+
+.card-content {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+
+    max-width: 200px;
+
+    padding: 17px 19px 17px 19px;
+    font-weight: 300;
+    line-height: 20.0003px;
 }
 
+.card-right {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 
-a{
+    font-size: 24px;
+    color: rgb(0, 113, 227);
+
+    padding: 17px 19px 17px 1px;
+    width: 40px;
+}
+
+a {
     text-decoration: none;
     color: black;
 }
 
-a:hover{
+/* a:hover{
     animation: acolorhover 0.24s forwards;
-}
+} */
 
 @keyframes filllogo {
     from {
@@ -341,7 +377,7 @@ a:hover{
 
 @media screen and (max-width: 800px) {
 
-    .Menu-compte{
+    .account-menu{
         display: flex ;
         margin: 0 0 0 0;
         max-width: 200px;
@@ -351,3 +387,32 @@ a:hover{
 
 }
 
+.settings-header {
+    font-family: "SF Pro Display";
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.196px;
+    line-height: 32px;
+
+    padding: 0;
+    margin: 0;
+    height: 32px;
+}
+
+.settings-subheader {
+    font-family: "SF Pro Text";
+    color: rgb(66, 66, 69);
+    font-weight: 400;
+    letter-spacing: -0.224px;
+    font-size: 14px;
+    line-height: 20.003px;
+
+    margin: 0;
+    padding: 0;
+}
+
+.email-address {
+    color: #6E6E73;
+    font-weight: 350;
+    font-family: "SF Pro Text";
+}
