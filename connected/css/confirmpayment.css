@@ -93,9 +93,7 @@ body{
     border: 0px;
     background-color: #06c;
     transition: all 0.24s ease-in-out;
-
     padding: 5px 10px 5px 10px;
-
     cursor: pointer;
 }
 
@@ -118,7 +116,7 @@ button , .input{
     width: 100%;
     min-height: 100%;
     max-width: 980px;
-    align-items: left;
+    align-items: center;
     display: flex;
     flex-direction: column;
     margin: 10px 0 0 0;
@@ -128,101 +126,80 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     min-height: 60vh;
 }
 
-.body-payment{
-    justify-content: left;
-}
-
-.card-payment{
+.card {
     display: flex;
-    border: 0.1em solid black;
-    border-radius: 11px;
-    box-sizing: border-box;
-    max-width: 600px;
-    width: 100%; 
-    height: 75px;
-    vertical-align:middle;
+    flex-direction: column;
     align-items: center;
-    padding-left: 5%;
-    margin: 0%;
-    margin: 5% 0 5% 0;
-    cursor: pointer;
-    outline: none;
-}
-.card-payment:focus{
-    border-color: #06c;
-    border-width: 0.2em;
-}
-.card-payment div:first-of-type{
-    display: flex;
-}
-.card-payment:last-child{
-    display: block;
-}
-.card-payment #logo{
-    width: 20px;
-}
-.footer-payment{
-    display: flex;
+    text-align: center;
+    width: 100%;
+    max-width: 980px;
+    height: 100%;
+    max-height: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 12px -1px black;
+    transition: all .75s ease;
 }
 
-main .nav-subtop-background{
-    margin: 5% 0 5% 0; 
+.card:hover{
+    scale: 1.025;
+
+    .title {
+        color: rgb(99, 99, 102);
+    }
+
+    .span-text {
+        font-size: 1.2em;
+        color: #06c;
+    }
+
+    .a-span {
+        color: #06c;
+    }
+
+    .lottie-path {
+    animation: draw 3s linear forwards;
+    stroke: #06c;
+    }
 }
 
-.link {
+.a-span {
     text-decoration: none;
-    color: #06c;
+    color: black;
 }
 
-.link:hover{
-    text-decoration: underline;
-    .svg-icon-inline-chevron {
-        animation: slideout .24s forwards;
-        fill: #06c;
-    }
+.title {
+    font-family: 'SF Pro Display Medium';
+    font-size: 2em;
+    transition: all .75s ease;
 }
 
-.svg-icon-inline-chevron{
-    height: 11px;
-    opacity: 1;
-    margin: 0 0 -1px -1px;
-    fill: #06c;
+.text{
+    font-family: 'SF Pro';
+    font-size: 1.1em;
 }
 
-.link:not(:hover){
-    .svg-icon-inline-chevron{
-        animation: slideext .24s forwards;
-        fill: #06c;
-    }
+.span-text {
+    transition: all .75s ease;
 }
 
-@keyframes slideout {
+.lottie {
+    margin: 0 0 0 46%;
+    display: flex;
+}
 
-    from {
-        opacity: 0;
-        margin: 0 0 -1px -11px ;
-    }
+.lottie-path {
+    stroke-dasharray: 705; /* La longueur totale du chemin */
+    stroke-dashoffset: 705; /* Cache le chemin au début */
+}
 
+@keyframes draw {
     to {
-        opacity: 1;
-        margin: 0 0 -1px -1px;
-    }
-}
-
-@keyframes slideext {
-
-    from {
-        opacity: 1;
-        margin: 0 0 -1px -1px ;
-    }
-
-    to {
-        opacity: 0;
-        margin: 0 0 -1px 10px;
+        stroke-dashoffset: 0; /* Montre le chemin */
     }
 }
 
@@ -246,5 +223,8 @@ main .nav-subtop-background{
         fill: #363638;
     }
 }
+
+
+
 
 
