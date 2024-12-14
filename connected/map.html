@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Transports</title>
-    <script src="../scripts/burger-menu.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="icons/favicon.ico">
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/main.css">
@@ -12,19 +11,20 @@
     <link rel="stylesheet" href="../css/responsive.css">
 </head>
 <body>
-    <div id="burger-menu" class="burger-icon" onclick="toggleNavMenu()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div> 
-    <nav id="navtop">
-        <menu>
+    <div class="burger-container">
+        <input type="checkbox" id="burger-toggle" class="burger-toggle">
+        <label for="burger-toggle" class="burger-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </label>
+        <nav id="navtop">
             <div id="menu">
                 <div style="--i: 1"><a href="account.html">Compte</a></div>
                 <div style="--i: 2"><a href="about.html">À propos</a></div>
                 <div style="--i: 3"><a href="legals.html">Mentions Legales</a></div>
             </div>
-        </menu>
-    </nav>
+        </nav>
+    </div>
     <div id="mainmenu">
         <nav id="nav-responsive">
             <div class="nav-container flex-reverse">

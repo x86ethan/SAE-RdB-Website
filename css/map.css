@@ -7,16 +7,6 @@ body,html {
         height: 100%; 
 }
 
-@keyframes showBurgerMenu {
-    0% {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
 
 .separator-horiz {
     width: 100%;
@@ -227,6 +217,14 @@ body,html {
     color: rgb(142, 142, 147);
 }
 
+.burger-container {
+    position: relative;
+}
+
+.burger-toggle {
+    display: none;
+}
+
 .burger-icon {
     width: 30px;
     height: 15px;
@@ -239,10 +237,10 @@ body,html {
     position: absolute;
     top: 30px;
     right: 45px;
-    padding: 0 0px 10px 10px;
+    padding: 0 0 10px 10px;
 }
 
-.bar {
+.burger-icon .bar {
     height: 2px;
     width: 100%;
     background-color: black;
@@ -250,7 +248,16 @@ body,html {
     transform-origin: center;
 }
 
-/* Arrière-plan noir semi-transparent du menu */
+.burger-toggle:checked + .burger-icon .bar:nth-child(1) {
+    transform: translateY(5px) rotate(45deg);
+    background-color: white;
+}
+
+.burger-toggle:checked + .burger-icon .bar:nth-child(2) {
+    transform: translateY(-5px) rotate(-45deg);
+    background-color: white;
+}
+
 #navtop #menu {
     position: fixed;
     top: 0;
@@ -259,56 +266,69 @@ body,html {
     z-index: 10;
     padding: 15px;
     list-style-type: none;
-    display: none; /* Caché par défaut */
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
     background-color: rgba(0, 0, 0, 0.9);
-    animation: slideIn .5s forwards;
+    overflow: hidden;
 }
 
-/* Apparition progressive des éléments du menu */
-#navtop #menu.show {
+.burger-toggle:checked ~ #navtop #menu {
     display: flex;
+    animation: slideIn 0.5s forwards;
 }
 
-#navtop #menu div {
-    font-family: 'SF Pro', sans-serif;
+.burger-toggle:not(:checked) ~ #navtop #menu div {
     opacity: 0;
     transform: translateY(-20px);
+    pointer-events: none;
+}
+
+.burger-toggle:checked ~ #navtop #menu div {
+    opacity: 1;
+    transform: translateY(0);
     animation: showBurgerMenu 0.5s forwards cubic-bezier(0.25, 1.75, 0.5, 1);
-    animation-delay: calc(0.1s * var(--i));
+    animation-delay: calc(0s * var(--i));
     pointer-events: auto;
     margin-top: 10px;
     z-index: 21;
     width: 100%;
     padding: 10px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Lignes de séparation */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Styles pour les liens du menu */
 #menu > div > a {
     font-size: 21px;
     color: #F2F2F7;
     text-decoration: none;
     display: block;
     padding-left: 50px;
-    transition: all .24s ease;
+    
 }
 
 #menu > div > a:hover {
-    color: white
+    color: white;
 }
 
-/* Animation de l'icône burger comme dans la version 1 */
-#burger-menu.active .bar:nth-child(1) {
-    transform: translateY(5px) rotate(45deg);
-    background-color: white;
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
-#burger-menu.active .bar:nth-child(2) {
-    transform: translateY(-5px) rotate(-45deg);
-    background-color: white;
+@keyframes showBurgerMenu {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Styles pour le logo principal */
