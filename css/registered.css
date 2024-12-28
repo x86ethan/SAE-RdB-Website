@@ -1,0 +1,179 @@
+.container {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.container2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden; /* Empêche le défilement de la page */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les éléments horizontalement */
+    justify-content: center; /* Centre les éléments verticalement */
+    min-height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    text-align: center;
+    overflow: hidden; /* Empêche le défilement de main */
+    flex-grow: 1;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    width: max-content;
+    align-items: start;
+    box-shadow: 0 4px 6px rgb( 0, 0, 0, 0.3);
+    border-radius: 12px;
+    background-color: #fff;
+    gap: 5px;
+    font-family: 'SF Pro Text Medium';
+}
+
+.logo {
+    display: flex;
+    height: 50px;
+    width: 25px;
+    fill: #363638;
+    margin: 0 0 0 5px;
+}
+
+.logo:hover {
+    animation: filllogo .32s forwards;
+}
+
+.logo:not(:hover){
+    animation: nofilllogo .32s forwards;
+}
+
+.title,.text {
+    align-items: center;
+    padding: 0 20px 0 20px;
+}
+
+.abandon {
+    padding: 1px 20px 10px 20px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 10px 0;
+}
+
+.acceuil-redirection {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0px;
+    transition: background-color 0.3s;
+}
+
+.redirection {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0px;
+    background-color: #06c ;
+    font-family: 'SF Pro';
+    transition: background-color 0.3s;
+}
+
+.redirection:hover {
+    background-color: #0076DF;
+}
+
+.acceuil-redirection:hover {
+    background-color: #BCBCC0;
+}
+
+.link1{
+    text-decoration: none;
+    font-family: 'SF Pro';
+    color: black ;
+}
+
+.link2{
+    text-decoration: none;
+    font-family: 'SF Pro';
+    color: #F2F2F7;
+}
+
+.card:hover{
+    animation: scaling .24s forwards;
+}
+
+.card:not(:hover){
+    animation: notscaling .24s forwards;
+}
+
+@keyframes scaling {
+    
+    from {
+        scale: 1;
+    }
+    
+    to {
+        scale: 1.025;
+    }
+}
+
+@keyframes notscaling {
+    
+    from {
+        scale: 1.025;
+    }
+
+    to {
+        scale: 1;
+    }
+}
+
+@keyframes filllogo {
+    from {
+        fill: #363638;
+    }
+
+    to {
+        fill: black;
+    }
+}
+
+@keyframes nofilllogo {
+
+    from {
+        fill: black;
+    }
+
+    to {
+        fill: #363638;
+    }
+}

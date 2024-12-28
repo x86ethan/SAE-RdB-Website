@@ -1,0 +1,278 @@
+@media screen and (max-width: 400px) {
+    form {
+        align-items: center;
+        visibility: visible;
+        
+    }
+    .input-field input {
+        width: 75vw !important;
+    }
+    .input-field label {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 90%;
+    }
+    /* .input-field label::after {
+        content: "...";
+        position: absolute;
+        right: 0;
+        top: 0px;
+
+    } */
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    height: unset !important;
+
+}
+
+.logo-top {
+    position: relative;
+    height: 44px;
+    width: 14.5px;
+    padding: 0;
+    z-index: 100;
+    fill: #363638;
+    padding: 0px 6px 0 6px;
+}
+
+.logo-top:hover {
+    animation: filllogo .32s forwards;
+}
+
+.logo-top:not(:hover){
+    animation: nofilllogo .32s forwards;
+}
+
+.wrapper-subnav {
+    display: flex;
+    width: 100%;
+    max-width: 9999px;
+    align-items: flex-start;
+}
+
+.wrapper-nav{
+    margin: 0 14px 0 0  ;
+}
+
+.sub-title  {
+    display: block;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0; margin: 0;
+    overflow-x: hidden;
+}
+
+body > main{
+    padding: 0;
+    margin: 0;
+
+    height: 75vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1{
+    font-family: 'SF Pro Display Medium';
+    font-weight: 300;
+    text-align: center;
+    padding: 34px 0 0 0;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #494949;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.reg{
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    text-align: center;
+}
+.reg > div{
+    margin-top: 2%;
+    font-family: 'SF Pro';
+    color: #565657;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.reg a {
+    color: #06c;
+    text-decoration: none;
+    font-family: 'SF Pro';
+}
+
+.reg a:hover {
+    text-decoration: underline;
+}   
+
+form .input-field {
+    position: relative;
+    width: fit-content;
+    height: 40px;
+    margin: 7px;
+}
+
+
+.input-field label {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    
+    font-size: 1.2em;
+
+    user-select: none;
+    pointer-events: none;
+
+    transition: all 0.2s ease-in-out ;
+    color: gray;
+}
+
+input::placeholder {
+    position: relative;
+    left: 0; bottom: 0;
+}
+
+.input-field input:focus ~ label {
+    top: 10px;
+    font-size: 1em;
+}
+
+.input-field input {
+    height: 55px;
+    width: 400px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 0.1vh;
+    margin-bottom: 3vh;
+    font-size: 1em;
+    padding-left: 10px;
+    padding: 10px 10px 0px 10px;
+    gap: 0;
+    outline: none;
+
+    transition: border-color 0.2s ease-in-out;
+    box-sizing: border-box;
+
+}
+
+.input-field input:focus {
+    
+    border: 2px solid #06c;
+
+}
+
+.input-field button {
+    position: absolute; /* Positionnement indépendant de l'écoulement normal */
+    right: 0px; /* Distance de la bordure droite de l'input */
+    top: 70%; /* Centre verticalement */
+    transform: translateY(-50%); /* Ajuste pour centrer parfaitement */
+    height: calc(100% - 10px); /* Bouton un peu plus petit que l'input */
+    border-radius: 50%;
+    border: 1px solid #494949;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+
+    font-family: "SF Pro";
+
+    aspect-ratio: 1 / 1;
+    height: auto;
+}
+
+#login-image {
+
+    height: 20px;
+    width: auto;
+
+}
+
+/*lilian - Animation dans les Input*/
+.input-field input:focus ~ label,
+.input-field input:not(:placeholder-shown) ~ label {
+    top: 10px;
+    font-size: 0.8rem;
+}
+
+.email-field{
+    border-top-left-radius: 1.5vh;
+    border-top-right-radius: 1.5vh; 
+    border-bottom: none; 
+}
+
+.password-field{
+    border-bottom-left-radius: 1.5vh;
+    border-bottom-right-radius: 1.5vh;  
+}
+
+
+#text:valid + #ok {
+    color: #565657;
+    border-color: #565657;
+    transition: color 0.5 border-color 0.5s ease, transform 0.3s ease;
+    cursor: pointer;
+    opacity: 2;
+}
+
+
+#login-window > div > form > div.reg svg {
+    height: 1.12em;
+    
+    fill: #06c;
+}
+
+
+@keyframes filllogo {
+    from {
+        fill: #363638;
+    }
+
+    to {
+        fill: black;
+    }
+}
+
+@keyframes nofilllogo {
+
+    from {
+        fill: black;
+    }
+
+    to {
+        fill: #363638;
+    }
+    
+}
+
+.text-register {
+    max-width: 80vw;
+}

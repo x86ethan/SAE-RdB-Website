@@ -1,0 +1,264 @@
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+@font-face {
+    font-family: "San Francisco Bold";
+    font-weight: 800;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%; 
+}
+
+* {
+    font-family: 'SF Pro';
+
+    --button-color: #0071e3;
+    --link-color: #06c;
+}
+
+.default-card {
+    display: none;
+}
+
+.shown {
+    display: inherit !important;
+}
+
+.hidden  {
+    display: none !important;
+}
+
+
+.footer {
+    width: 100%;
+    color: #8E8E93;
+    text-align: left;
+    line-height: 1.33em;
+    font-size: 13.5px;
+    letter-spacing: 0.01em;
+    background-color: rgb(245, 245, 247);
+    position: relative;   
+}
+
+.footer-wrapper {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    /* padding: 15px 0 30px 0; */
+    padding: 15px;
+    
+}
+
+.footer-label-0, .footer-label-1 {
+    padding: 0 0 3px 0;
+    
+}
+
+.footer-label-0 a {
+    color: #06c;
+    text-decoration: none;
+}
+
+.footer-label-0 a:hover {
+    text-decoration: underline;
+}
+
+.footing a {
+    color: #6C6C70;
+    text-decoration: none;
+}
+
+.footing a:nth-child(n+2)::before {
+    content: "|";
+    color: #d2d2d7;
+    --spacing: 10px;
+    padding-left: calc(var(--spacing) / 2);
+    padding-right: calc(var(--spacing) / 2);
+}
+
+.footing a:hover {
+    text-decoration: underline;
+}
+
+
+.navtop-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    gap: 32px;
+    margin: 0 0 7px 30px;
+    color: #D8D8DC;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    flex: 0 1 auto;
+}
+
+.logo-top {
+    position: relative;
+    height: 44px;
+    width: 14.5px;
+    padding: 0;
+    z-index: 100;
+    fill: #363638;
+    padding: 0px 6px 0 6px;
+}
+
+.logo-top:hover {
+    animation: filllogo .32s forwards;
+}
+
+.logo-top:not(:hover){
+    animation: nofilllogo .32s forwards;
+}
+
+header {
+    background-color: #FFFFFFCC;
+    backdrop-filter: saturate(1.8) blur(20px);
+}
+
+.wrapper-subnav {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    align-items: flex-start;
+    position: sticky;
+    top: 0px;
+}
+
+.nav-subtop-background::after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    max-width: 980px;
+    background-color: #d2d2d2;
+    margin:-4px auto 0 auto;
+}
+
+.nav-top {
+    width: 100%;
+    max-width: 980px;
+    height: 48px;
+    margin: 0 auto 0 auto;
+    padding: 0 22px 0 10px;
+}
+
+.nav-subtop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 52px;
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding: 0 22px 0 22px;
+    position: sticky;
+    top: 0;
+}
+
+.nav-subtop-content {
+    font-family: 'SF Pro Display Regular';
+    font-size: 1.31rem;
+    font-weight: 600;
+    line-height: 3.15rem;
+    max-width:max-content;
+    letter-spacing: 0.053rem;
+    width: 100%;
+    display: inline-block;
+    white-space: nowrap;
+    margin: -5px 0 0 0;
+    color: #242426;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+    min-width: 0;
+}
+
+.nav-subtop-content-right {
+    display: inline-block; 
+    font-family: 'SF Pro';
+    font-size: 14px;
+    line-height: 22px;
+    color: #48484A;
+    text-decoration: none;
+    transition: all .1s ease-in-out;
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 0 1 auto;
+}
+
+.nav-subtop-content-right:hover {
+    color: #06c;
+}
+
+.bouton-commencer {
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 10px 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 200;
+    letter-spacing: .01em;
+    line-height: 1.3333733333;
+    font-family: 'SF Pro Display Light';
+    border: 0px;
+    background-color: #0071E3;
+    /* transition: all 0.2s ease-in-out; */
+    color: white;
+    z-index: 0;
+
+    cursor: pointer;
+
+}
+
+.bouton-commencer:hover {
+    background-color: #0076DF ;
+}
+
+@keyframes filllogo {
+    from {
+        fill: #363638;
+    }
+
+    to {
+        fill: black;
+    }
+}
+
+@keyframes nofilllogo {
+
+    from {
+        fill: black;
+    }
+
+    to {
+        fill: #363638;
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    .logo-top {
+        position: relative;
+        height: 44px;
+        width: 19.5px;
+        padding: 0;
+        z-index: 100;
+        fill: #363638;
+        padding: 0px 6px 0 6px;
+    }
+}

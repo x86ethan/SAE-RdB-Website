@@ -1,0 +1,36 @@
+.nothing-there {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    height: 200px;
+}
+
+.nothing-icon {
+    font-family: "SF Pro";
+    color: rgb(120, 120, 100);
+
+}
+
+.nothing-title {
+    font-family: "SF Pro Display";
+    font-size: 24px;
+    font-weight: 700;
+
+    color: rgb(120, 120, 100);
+}
+
+.nothing-sub {
+    font-family: "SF Pro Display";
+    font-size: 15px;
+    font-weight: 400;
+
+    text-align: center;
+
+    color: rgb(120, 120, 100);
+
+    display: block;
+    max-width: 450px;
+}

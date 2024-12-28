@@ -1,0 +1,394 @@
+body{
+    background-color: var(--sk-body-background-color, #fff);
+    color: var(--sk-body-text-color, #1d1d1f);
+    font-family: '../SF Pro Text', '../SF Pro Icons', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    line-height: 1.4705882353;
+}
+
+.logo-top {
+    position: relative;
+    height: 44px;
+    width: 14.5px;
+    padding: 0;
+    z-index: 100;
+    fill: #363638;
+    padding: 0px 6px 0 6px;
+}
+
+.logo-top:hover {
+    animation: filllogo .32s forwards;
+}
+
+.logo-top:not(:hover){
+    animation: nofilllogo .32s forwards;
+}
+
+.wrapper-subnav {
+    display: flex;
+    width: 100%;
+    max-width: 9999px;
+    align-items: flex-start;
+    margin: -5px 0 0 0;
+}
+
+.nav-container {
+    position: sticky;
+    top: 0;
+    z-index: 255;
+}
+
+.nav-subtop-background::after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 980px;
+    background-color: #d2d2d2;
+    margin: -4px auto 0 auto
+}
+
+.nav-top {
+    width: 980px;
+    height: 48px;
+    margin: 0 auto 0 auto;
+    padding: 0 22px 0 10px;
+}
+
+.nav-subtop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 52px;
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto 3px auto;
+    padding: 0 22px ;
+}
+
+.nav-subtop-content {
+    font-family: 'SF Pro Display Regular';
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 3.15rem;
+    color: #242426;
+    white-space: nowrap;
+}
+
+.nav-subtop-content-right {
+    text-decoration: none;
+    transition: all .1s ease-in-out;
+    margin: 1px 0 0 0;
+}
+
+.bouton-deconnexion {
+    height: 26px;
+    border-radius: 12px;
+    font-size: 12px;
+    letter-spacing: .01em;
+    line-height: 1.3333733333;
+    font-family: 'SF Pro';
+    border: 0px;
+    background-color: #06c;
+    transition: all 0.24s ease-in-out;
+
+    padding: 5px 10px 5px 10px;
+
+    cursor: pointer;
+}
+
+.bouton-deconnexion:hover {
+    background-color: #007AFF ;
+}
+
+
+
+button , .input{
+    color : white;
+    background-color: rgb(0, 113, 227);
+    border-radius: 12px;
+    border: none;
+
+    padding: 17px 30px 17px 30px;    
+    width: 100%;
+
+    cursor: pointer;
+
+    font-family: "SF Pro Text";
+    font-style: normal;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20.002px;
+    letter-spacing: -0.374px;
+
+    transition: background-color .2s ease-in-out;
+
+
+}
+
+.input:hover {
+    background-color: #0076df;
+}
+
+.container{
+    width: 100%;
+    min-height: 100%;
+    max-width: 980px;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 60vh;
+    text-align: left !important;
+}
+
+.body-payment{
+    justify-content: left;
+}
+
+.card-payment{
+    display: flex;
+    border: 1px solid rgb(134, 134, 139);
+    border-radius: 11px;
+    box-sizing: border-box;
+    /* max-width: 600px; */
+    width: 100%; 
+    vertical-align:middle;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    outline: none;
+    min-height: 83px;
+}
+.card-payment:focus{
+    border-color: #06c;
+    border-width: 0.2em;
+}
+
+.applepay {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+/* Apple Pay text */
+.applepay-text {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "SF Pro Display";
+    letter-spacing: 0.216px;
+    line-height: 20px;
+}
+
+.payment-section:last-of-type .card-payment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.payment-section:last-of-type .card-payment div:nth-child(1) {
+    font-family: "SF Pro Text";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -0.374px;
+    line-height: 21.0012px;
+    margin-bottom: 5px;
+}
+
+.payment-section:last-of-type .card-payment div:nth-child(2) {
+    font-family: "SF Pro Text";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.12px;
+    line-height: 16.005px;
+}
+
+.card-payment #logo{
+    height: 18px;
+    margin-bottom: 2px;
+}
+.address-choice {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    pointer-events: all;
+    cursor: pointer;
+}
+
+.address-choice input {
+    height: auto;
+
+}
+
+.address-choice .content {
+    margin: 0;
+    padding: 0;
+}
+
+main .nav-subtop-background{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: #06c;
+}
+
+.link:hover{
+    text-decoration: underline;
+    .svg-icon-inline-chevron {
+        animation: slideout .24s forwards;
+        fill: #06c;
+    }
+}
+
+.svg-icon-inline-chevron{
+    height: 11px;
+    opacity: 1;
+    margin: 0 0 -1px -1px;
+    fill: #06c;
+}
+
+.link:not(:hover){
+    .svg-icon-inline-chevron{
+        animation: slideext .24s forwards;
+        fill: #06c;
+    }
+}
+
+@keyframes slideout {
+
+    from {
+        opacity: 0;
+        margin: 0 0 -1px -11px ;
+    }
+
+    to {
+        opacity: 1;
+        margin: 0 0 -1px -1px;
+    }
+}
+
+@keyframes slideext {
+
+    from {
+        opacity: 1;
+        margin: 0 0 -1px -1px ;
+    }
+
+    to {
+        opacity: 0;
+        margin: 0 0 -1px 10px;
+    }
+}
+
+@keyframes filllogo {
+    from {
+        fill: #363638;
+    }
+
+    to {
+        fill: black;
+    }
+}
+
+@keyframes nofilllogo {
+
+    from {
+        fill: black;
+    }
+
+    to {
+        fill: #363638;
+    }
+}
+
+.payment-section {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+
+    width: 50%;
+
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+}
+
+.payment-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 100%;
+}
+
+.details-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+
+@media screen and (max-width: 750px) {
+    .payment-section {
+        width: 100%;
+    }
+
+    .form-confirm {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    main {
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.conditions-confirm {
+    pointer-events: all;
+}
+
+.form-confirm {
+    width: 50%;
+}
+
+.form-textbox-label {
+    position: absolute !important;
+}
+
+label {
+    position: static !important;
+}
+
+.card {
+    width: 100%;
+    pointer-events: all;
+}
+
+input[type="radio"]:checked + .card-payment {
+    border-color: #06c;
+    border-width: 0.2em;
+}

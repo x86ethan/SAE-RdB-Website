@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Apple Transports - Paiement</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../icons/favicon1.ico">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="css/paypage.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/mainconnected.css">
+    
+</head>
+<body>
+    <div class="nav-container">
+        <header>
+            <div class="wrapper-nav">
+                <nav class="nav-top">
+                    <a href="../index.html"><svg class="logo-top" height="48" viewBox="0 0 17 48" width="17" xmlns="http://www.w3.org/2000/svg"><path d="m15.5752 19.0792a4.2055 4.2055 0 0 0 -2.01 3.5376 4.0931 4.0931 0 0 0 2.4908 3.7542 9.7779 9.7779 0 0 1 -1.2755 2.6351c-.7941 1.1431-1.6244 2.2862-2.8878 2.2862s-1.5883-.734-3.0443-.734c-1.42 0-1.9252.7581-3.08.7581s-1.9611-1.0589-2.8876-2.3584a11.3987 11.3987 0 0 1 -1.9373-6.1487c0-3.61 2.3464-5.523 4.6566-5.523 1.2274 0 2.25.8062 3.02.8062.734 0 1.8771-.8543 3.2729-.8543a4.3778 4.3778 0 0 1 3.6822 1.841zm-6.8586-2.0456a1.3865 1.3865 0 0 1 -.2527-.024 1.6557 1.6557 0 0 1 -.0361-.337 4.0341 4.0341 0 0 1 1.0228-2.5148 4.1571 4.1571 0 0 1 2.7314-1.4078 1.7815 1.7815 0 0 1 .0361.373 4.1487 4.1487 0 0 1 -.9867 2.587 3.6039 3.6039 0 0 1 -2.5148 1.3236z"></path></svg></a>
+                </nav>
+                <div class="wrapper-subnav">
+                    <nav class="nav-subtop">
+                        <div class="nav-subtop-content">Régler</div>
+                        <div class="nav-subtop-content-right"><a href="../index.html" class="nav-subtop-content-right"><button class="bouton-deconnexion">Déconnexion</button></a></div>
+                    </nav>
+                </div>
+                <div class="nav-subtop-background"></div>
+            </div>
+        </header>
+    </div>
+    <main>
+        <div class="container"> <!-- en column center left-->
+            <div class="header-payment"><h1>Comment souhaitez-vous payer ?</h1></div>
+            <form class="body-payment">
+                <div style="font-family: 'SF Pro Text'; font-size: 14px; font-weight: 400; font-style: normal; letter-spacing: -0.224px; line-height: 20.003px; color: rgb(29, 29, 31);"">Malheureusement, vous ne pouvez pas utiliser la solde de votre compte Apple sur ce service.</div>
+                <div> <h2>Régler la totalité</h2></div>
+                <div class="payment-section">
+                    <label class="card" id="label-applepay">
+                        <input aria-labelledby="label-applepay" type="radio" name="payment" value="creditcard" hidden>
+                        <div tabindex="0" class="card-payment">
+                            <div class="applepay">
+                                <img src="../img/apple-logo.png" alt="apple-logo" id="logo">
+                                <div class="applepay-text">Pay</div>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+                <div class="payment-section">
+                    <label class="card" id="label-creditcard">
+                        <input type="radio" aria-labelledby="label-creditcard" name="payment" value="creditcard" hidden>
+                        <div class="card-payment">
+                            <div>Carte de débit ou de crédit</div>
+                            <div>Visa, MasterCard ou AppleCard</div>
+                        </div>
+                    </label>
+                    <div class="payment-info">
+                        <div class="form-textbox">
+                            <input class="form-textbox-input" type="text" aria-labelledby="paymentlabel-1_1" id="payment-1_1" pattern="\d{4} \d{4} \d{4} \d{4}" placeholder="" title="">
+                            <label class="form-textbox-label" id="paymetlabel-1_1">Numéro de carte bancaire</label>
+                        </div>
+                        <div class="details-wrapper">
+                            <div class="form-textbox">
+                                <input type="text" aria-labelledby="paymentlabel-1_2" id="payment-1_2" pattern="\d{2}/\d{2}" class="form-textbox-input" placeholder="" title="">
+                                <label id="paymentlabel-1_2" class="form-textbox-label">Date d'expiration</label>
+                            </div>
+                            <div class="form-textbox">
+                                <input type="text" aria-labelledby="paymentlabel-1_3" id="payment-1_3" pattern="\d{3}" class="form-textbox-input" placeholder="" title="">
+                                <label id="paymentlabel-1_3" class="form-textbox-label">CVC</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <label class="conditions-confirm">
+                <input type="checkbox" required>
+                <span>Je confirme avoir lu les <a href="" class="link">conditions Générales d'utilisation <svg data-v-6c993c81="" data-v-7df49445="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-icon-inline-chevron" viewBox="0 0 14 14" data-v-35853846=""><path data-v-6c993c81="" d="m4.81347656 13.1269531c.22558594 0 .41015625-.0820312.56738282-.2324219l5.31835942-5.19531245c.1845703-.19140625.2802734-.38964844.2802734-.63574219 0-.23925781-.0888672-.45117187-.2802734-.62890625l-5.31835942-5.20214843c-.15722657-.15039063-.34179688-.23242188-.56738282-.23242188-.45800781 0-.81347656.35546875-.81347656.80664062 0 .21875.09570312.43066407.24609375.58789063l4.79199219 4.67578125-4.79199219 4.6621094c-.15722656.1640625-.24609375.3623047-.24609375.5878906 0 .4511719.35546875.8066406.81347656.8066406z"></path></svg></a></span>
+            </label>
+            
+            <form action="confirmpayment.html" class="form-confirm">
+                <div class="nav-subtop-background"></div>
+                <label class="address-choice">
+                    <input type="radio">
+                    <div class="content">
+                        <strong style="font-weight: 900;">Claire Dubois</strong> <br>
+                        <span>Adresse : 1800 Saratoga Ave, San José, CA 95129 États-Unis</span>
+                    </div>
+                </label>
+                <div class="nav-subtop-background"></div>
+                <input type="submit" value="Payer" class="input">
+            </form>
+        </div>
+    </main>
+    <div class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-label-0">Vous pouvez aussi effectuer des achats <a href="">dans un Apple Store</a> ou <a href="">chez un revendeur</a>. Ou appeler le 0800 046 046.</div>
+            <div class="footer-label-1">Copyright © 2024 Apple Inc. Tous droits réservés.</div>
+            <div class="footing">
+                <a href="legals.html">Mention Légales</a>
+                <a href="">Conditions d'utilisation</a>
+                <a href="">Conditions Générales de Vente</a>
+                <a href="security.html">Plan du Site</a>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,373 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: calc(100vh - 48px - 52px);
+    text-align: center;
+}
+
+h1 {
+    font-family: 'SF Pro';
+    text-align: start;
+    font-size: 2rem;
+    letter-spacing: 0.025em;
+    margin: 50px 0 35px 0;
+}
+
+.subheader-justify-left {
+    font-family: 'SF Pro Text Regular';
+    width: 100%;
+    text-align: left;
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    padding: 0 0 14px 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 0 -1px 0 0;
+}
+
+.container2 {
+    width: 100%;
+    height: 100%;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #d2d2d2;
+    width: 677px;
+    padding: 0 20px 0 0;
+    height: 276px;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.email-wrapper, .submit-wrapper {
+    width: 100%;
+}
+
+.email-box {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.form-emailbox-input {
+    width: 100%;
+    max-width: 330px;
+    height: 3.49412rem;
+    font-size: 1rem;
+    border: 1px solid #888;
+    border-radius: 12px;
+    outline: none;
+    background: #fff;
+    box-sizing: border-box; 
+    padding-left: 13px;
+}
+
+.form-emailbox-input:focus {
+    border: 2px solid #0071e3;
+    padding: 20px 0 0 12px;
+}
+
+.form-emailbox-input:not(:focus) {
+    padding: 20px 0 0 13px;
+}
+
+label {
+    font-family: 'SF Pro';
+    position: absolute;
+    font-size: 1.15rem;
+    font-weight: 100;
+    color: #888;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.form-emailbox-label {
+    padding: 1.05882rem .94118rem 0;
+}
+
+.form-emailbox-input:focus + label,
+.form-emailbox-input:not(:placeholder-shown) + label {
+    animation: input-focus 0.24s forwards;
+}
+
+.form-emailbox-input:not(:focus):placeholder-shown + label {
+    animation: input-focus-reverse 0.24s forwards;
+}
+
+
+.text-wrapper {
+    display: flex;
+    flex-direction:row;
+    text-align: start;
+    width: 100%;
+    max-width: 350px;
+    gap: 40px;
+}
+
+.text {
+    font-size: 14.5px;
+    color: #6e6e73;
+    line-height: 1.42859;
+    width: 100%;
+    font-family: 'SF Pro Text Regular';
+    font-weight: 100;
+    letter-spacing: -.016em;
+}
+
+.text-svg{
+    height: 60px;
+    width: 60px;
+    margin: 2.5px 0 0 20px;
+}
+
+.submit-wrapper {
+    margin: 105px 0 0 0;
+}
+
+.submit {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.submit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    height: 36px;
+    padding: 0;
+    margin: 0 0 35px 0;
+    background-color: #0071e3;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.submit-button-label {
+    font-family: 'SF Pro Display Regular';
+    font-size: 17px;
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 0.033em;
+    pointer-events: none;
+    z-index: 2;
+    position: absolute;
+}
+
+.submit-button input[type="submit"] {
+    width: 100%;
+    max-width: 200px;
+    height: 36px;
+    padding: 0;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #0071e3;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.submit-button input[type="submit"]:hover {
+    animation: submit-in-progress 1s forwards;
+}
+
+@keyframes submit-in-progress {
+    to {
+        background-color: #06c;
+    }
+}
+
+@keyframes input-focus {
+
+    from {
+        padding: 1.05882rem .94118rem 0;
+    }
+
+    to {
+        padding: 10px .94118rem 0.94118rem;
+        font-size: 0.8rem;
+    }
+}
+
+@keyframes input-focus-reverse {
+    
+    from {
+        padding: 10px .94118rem 0 .94118rem;
+        font-size: 0.8rem;
+    }
+
+    to {
+        padding: 1.05882rem .94118rem 0;
+    }
+}
+
+@keyframes filllogo {
+    from {
+        fill: #363638;
+    }
+
+    to {
+        fill: black;
+    }
+}
+
+@keyframes nofilllogo {
+
+    from {
+        fill: black;
+    }
+
+    to {
+        fill: #363638;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+
+    .container3 {
+        width: 100%;
+        padding: 0;
+        height: auto;
+        gap: 10px;
+    }
+
+    .container4 {
+        display: none;
+    }
+
+    .submit-wrapper {
+        display: flex;
+        margin: 103px 150px 0 150px ;
+    }
+
+    .email-wrapper {
+        margin: 0 150px 0 150px ;
+    }
+
+    label {
+        font-family: 'SF Pro';
+        position: absolute;
+        font-size: 1rem;
+        font-weight: 100;
+        color: #888;
+        pointer-events: none;
+        transition: all 0.2s ease;
+    }
+
+    .form-emailbox-label {
+        margin: -7px 0 0 0;
+    }
+
+    .form-emailbox-input:focus + label,
+    .form-emailbox-input:not(:placeholder-shown) + label {
+    animation: input-focus600px 0.24s forwards;
+    }
+
+    .form-emailbox-input:not(:focus):placeholder-shown + label {
+        animation: input-focus-reverse 0.24s forwards;
+    }
+
+    @keyframes input-focus600px {
+
+        from {
+            padding: 1.05882rem .94118rem 0;
+        }
+    
+        to {
+            padding: 7px auto;
+            font-size: 0.8rem;
+        }
+    }
+    
+    @keyframes input-focus-reverse600px {
+        
+        from {
+            padding: 7px auto;
+            font-size: 0.8rem;
+        }
+    
+        to {
+            padding: 1.05882rem .94118rem 0;
+        }
+    }
+
+    .form-emailbox-input {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .submit-button {
+        width: 100%;
+        height: 40px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .container3 {
+        width: 100%;
+        padding: 0;
+        gap: 15px;
+    }
+
+    .text-wrapper {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .submit-wrapper {
+        display: block;
+    }
+
+    .submit-button {
+        width: auto;
+        max-width: 200px;
+    }
+}
